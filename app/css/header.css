@@ -75,6 +75,9 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding-left: 60px; }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .header__child-center {
+      margin-left: auto; } }
   .header__child-center-mobile {
     margin-top: 25px; }
   .header__child-center, .header__social, .header-list {

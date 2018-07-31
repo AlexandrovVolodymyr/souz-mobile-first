@@ -9,7 +9,8 @@
 .contacts {
   background-color: #00abcc;
   font-size: 0;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .contacts__container {
     padding: 0 1rem; }
   .contacts__title {

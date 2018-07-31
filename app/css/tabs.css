@@ -22,29 +22,27 @@ ul.tabs {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
-
-ul.tabs li {
-  background: none;
-  color: #fff;
-  display: inline-block;
-  padding: 15px 25px;
-  cursor: pointer;
-  font-family: "ProbaPro-Bold", sans-serif;
-  font-size: 18px;
-  line-height: 20px;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  -webkit-transition: color 0.3s linear;
-  -o-transition: color 0.3s linear;
-  transition: color 0.3s linear; }
-  ul.tabs li:hover {
-    color: #383838; }
-
-ul.tabs li.current {
-  -webkit-border-radius: 25px;
-          border-radius: 25px;
-  background-color: #ffffff;
-  color: #383838; }
+  ul.tabs li {
+    background: none;
+    color: #fff;
+    display: inline-block;
+    padding: 15px 25px;
+    cursor: pointer;
+    font-family: "ProbaPro-Bold", sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    -webkit-transition: color 0.3s linear;
+    -o-transition: color 0.3s linear;
+    transition: color 0.3s linear; }
+    ul.tabs li:hover {
+      color: #383838; }
+    ul.tabs li.current {
+      -webkit-border-radius: 25px;
+              border-radius: 25px;
+      background-color: #ffffff;
+      color: #383838; }
 
 .tab-content {
   display: none;
@@ -52,6 +50,5 @@ ul.tabs li.current {
 
 .tab-link {
   font-size: 1rem; }
-
-.tab-content.current {
-  display: inherit; }
+  .tab-link.current {
+    display: inherit; }

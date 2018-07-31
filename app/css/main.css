@@ -97,6 +97,9 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding-left: 60px; }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .header__child-center {
+      margin-left: auto; } }
   .header__child-center-mobile {
     margin-top: 25px; }
   .header__child-center, .header__social, .header-list {
@@ -923,7 +926,8 @@
 .contacts {
   background-color: #00abcc;
   font-size: 0;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .contacts__container {
     padding: 0 1rem; }
   .contacts__title {
@@ -1175,8 +1179,8 @@ section {
   pointer-events: none; }
   .animate-line2 svg {
     display: block;
-    width: 100% !important;
-    height: 100% !important;
+    width: 100%;
+    height: 100%;
     top: 0 !important; }
 
 .animate-line {
@@ -1189,6 +1193,10 @@ section {
     left: 0 !important;
     width: 100%;
     top: -1px !important; }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .animate-line2 svg {
+    height: 300px; } }
 
 .slick-dots {
   display: -webkit-box;
