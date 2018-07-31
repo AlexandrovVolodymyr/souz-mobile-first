@@ -1,0 +1,147 @@
+/* CONTACTS */
+@import url(../fonts/ft40/ft40.css);
+@import url(../fonts/AG Book Pro Regular/AG Book Pro Regular.css);
+@import url(../fonts/AG Book Pro Bold/AG Book Pro Bold.css);
+.contacts-white-bg {
+  width: 100%;
+  margin-top: 1rem; }
+
+.contacts {
+  background-color: #00abcc;
+  font-size: 0;
+  position: relative; }
+  .contacts__container {
+    padding: 0 1rem; }
+  .contacts__title {
+    color: #fff;
+    font-size: 40px;
+    line-height: 30px;
+    font-family: "ProbaPro-Bold", sans-serif;
+    padding-top: 35px;
+    text-align: center;
+    margin-bottom: 40px; }
+  .contacts__address {
+    color: #fff;
+    display: block;
+    font-family: "ProbaPro-Regular", sans-serif;
+    font-size: 18px;
+    line-height: 38px;
+    text-align: center; }
+  .contacts__telephone {
+    color: #fff;
+    display: block;
+    font-family: "ProbaPro-Regular", sans-serif;
+    font-size: 21px;
+    line-height: 38px;
+    text-align: center;
+    margin-top: 40px; }
+    .contacts__telephone-small {
+      color: #fff;
+      display: block;
+      font-family: "ProbaPro-Regular", sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: left; }
+  .contacts__link {
+    color: #fff;
+    display: block;
+    font-family: "ProbaPro-Regular", sans-serif;
+    font-size: 18px;
+    line-height: 38px;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 40px; }
+    .contacts__link-small {
+      color: #fff;
+      display: block;
+      font-family: "ProbaPro-Regular", sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: left; }
+  .contacts__content-row {
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .contacts__cat, .contacts__description {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0.5rem 0;
+    color: #000000;
+    font-family: "ProbaPro-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left; }
+  .contacts__footer {
+    background-color: #fff;
+    position: relative;
+    min-height: 160px; }
+    .contacts__footer-info {
+      position: absolute;
+      top: 0;
+      padding-bottom: 25px;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+          -ms-transform: translate(-50%, 0);
+              transform: translate(-50%, 0);
+      width: 100%; }
+    .contacts__footer-title {
+      color: #000000;
+      font-family: "ProbaPro-Bold", sans-serif;
+      font-size: 18px;
+      line-height: 24px;
+      text-align: center;
+      margin-bottom: 40px; }
+    .contacts__footer-text {
+      color: rgba(0, 0, 0, 0.5);
+      font-family: "ProbaPro-Regular", sans-serif;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      padding: 0.25rem 0; }
+
+@media screen and (min-width: 769px) {
+  .contacts {
+    padding-top: 120px; }
+    .contacts__container {
+      max-width: 760px;
+      margin: auto; }
+    .contacts__title {
+      font-family: "ProbaPro-Bold", sans-serif;
+      font-size: 72px;
+      line-height: 50px;
+      text-align: center;
+      margin-bottom: 40px; }
+    .contacts__address, .contacts__telephone, .contacts__link {
+      font-size: 24px; }
+    .contacts__footer-title {
+      font-size: 20px; }
+    .contacts__footer-info {
+      top: -50%; }
+    .contacts__description, .contacts__cat {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 50%;
+          -ms-flex: 0 0 50%;
+              flex: 0 0 50%;
+      max-width: 50%;
+      padding: 1rem 0;
+      font-size: 20px; }
+    .contacts__telephone-small, .contacts__link-small {
+      font-size: 20px;
+      line-height: 28px;
+      text-align: left; } }
+
+/*/ CONTACTS */

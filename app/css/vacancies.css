@@ -1,0 +1,101 @@
+/* VACANCIES */
+@import url(../fonts/ft40/ft40.css);
+@import url(../fonts/AG Book Pro Regular/AG Book Pro Regular.css);
+@import url(../fonts/AG Book Pro Bold/AG Book Pro Bold.css);
+.vacancies {
+  background: #635eaa; }
+  .vacancies-section {
+    font-size: 0; }
+  .vacancies__container {
+    padding: 0 1rem;
+    position: relative; }
+  .vacancies__icon {
+    position: absolute;
+    bottom: -80px;
+    left: 1rem;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 80px;
+    z-index: 4; }
+    .vacancies__icon img {
+      width: 100%;
+      height: 100%; }
+  .vacancies__title {
+    color: #ffffff;
+    font-family: "ProbaPro-Bold", sans-serif;
+    font-size: 40px;
+    line-height: 30px;
+    padding-bottom: 35px;
+    padding-top: 35px;
+    text-align: center; }
+  .vacancies__list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .vacancies__link {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    color: #ffffff;
+    display: block;
+    font-family: "ProbaPro-Medium", sans-serif;
+    font-size: 18px;
+    padding: 12.5px 0;
+    text-align: center;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+    .vacancies__link:hover {
+      background-color: #fff;
+      color: #383838; }
+  .vacancies__item {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%; }
+  .vacancies__footer {
+    padding-top: 25px;
+    padding-bottom: 50px;
+    text-align: center; }
+    .vacancies__footer-link {
+      color: #ffffff;
+      display: inline-block;
+      font-family: "ProbaPro-Regular", sans-serif;
+      font-size: 16px;
+      line-height: 22px;
+      margin-top: 10px;
+      margin-bottom: 60px;
+      text-decoration: underline; }
+    .vacancies__footer-text {
+      color: #ffffff;
+      font-family: "ProbaPro-Regular", sans-serif;
+      font-size: 16px;
+      line-height: 22px; }
+
+@media screen and (min-width: 768px) {
+  .vacancies__list {
+    max-width: 760px;
+    margin: auto; } }
+
+@media screen and (min-width: 992px) {
+  .vacancies__link {
+    font-size: 24px;
+    padding: 28.5px 0; }
+  .vacancies__icon {
+    top: 50%;
+    bottom: auto;
+    height: 350px;
+    width: 200px; } }
+
+@media screen and (min-width: 1200px) {
+  .vacancies__title {
+    font-size: 72px;
+    line-height: 50px;
+    padding-top: 120px;
+    padding-bottom: 60px; } }
+
+/*/ VACANCIES */

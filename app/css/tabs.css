@@ -1,0 +1,57 @@
+/* TABS */
+@import url(../fonts/ft40/ft40.css);
+@import url(../fonts/AG Book Pro Regular/AG Book Pro Regular.css);
+@import url(../fonts/AG Book Pro Bold/AG Book Pro Bold.css);
+.tabs-container {
+  position: relative;
+  padding: 0 1rem; }
+
+ul.tabs {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+ul.tabs li {
+  background: none;
+  color: #fff;
+  display: inline-block;
+  padding: 15px 25px;
+  cursor: pointer;
+  font-family: "ProbaPro-Bold", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  -webkit-transition: color 0.3s linear;
+  -o-transition: color 0.3s linear;
+  transition: color 0.3s linear; }
+  ul.tabs li:hover {
+    color: #383838; }
+
+ul.tabs li.current {
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  background-color: #ffffff;
+  color: #383838; }
+
+.tab-content {
+  display: none;
+  padding: 15px; }
+
+.tab-link {
+  font-size: 1rem; }
+
+.tab-content.current {
+  display: inherit; }

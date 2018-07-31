@@ -1,0 +1,217 @@
+/* HEADER */
+
+@import 'vars'
+@import 'mixins'
+@import 'fonts'
+
+.header
+  background-color: #ffffff
+  position: fixed
+  width: 100%
+  transition: all 2s linear
+  z-index: 5
+  &__container
+    height: 50px
+    width: 100%
+    padding: 0 1rem
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: space-between
+  &__logo
+    width: 50px
+    height: 50px
+    transition: all 0.5s linear
+    &_link
+      display: inline-block
+      border-radius: 50%
+      background: #f3762e url(../img/logo-text.png) no-repeat center / 75%
+      width: 50px
+      height: 50px
+      transition: background-color 0.5s linear
+      transform: translateY(22.5px)
+      img
+        width: 50px
+        height: 50px
+    &-active
+      transform: translateY(-150%)
+  &__part
+    flex: 0 0 100%
+    max-width: calc(100% - 120px)
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-left: 60px
+  &__child-center
+    &-mobile
+      margin-top: 25px
+  &__child-center, &__social, &-list
+    display: none
+  &__social
+    text-align: center
+    &-mobile
+      margin-top: 25px
+      text-align: center
+  &__language
+    justify-self: flex-end
+    margin-left: auto
+    margin-right: 25px
+  &__language
+    select
+      font-size: 14px
+      background-color: #fff
+      border: none
+      cursor: pointer
+      opacity: 0.5
+      color: #383838
+      font-family: "ProbaPro-Regular", sans-serif
+      line-height: 30px
+      letter-spacing: 0.18px
+
+.mobile__part
+  background-color: #fff
+  position: fixed
+  height: 0
+  opacity: 0
+  visibility: hidden
+  top: 0
+  transition: all 0.5s ease-in-out
+  width: 100%
+  &-active
+    top: 50px
+    height: 100%
+    width: 100%
+    opacity: 1
+    visibility: visible
+  .header-list-mobile
+    width: calc(100% - 2rem)
+    margin: auto
+    &__item
+      border-top: 1px solid #ececec
+      flex: 0 0 100%
+      padding: 0.5rem 0
+    &__link
+      color: #000000
+      display: block
+      font-family: "ProbaPro-Regular", sans-serif
+      font-size: 18px
+      line-height: 30px
+      text-align: center
+      transition: all 0.3s linear
+  .header__child-center, .header__social, .header-list
+    display: block
+  .header-list
+    &-mobile
+      &__item
+        &:last-child
+          border-bottom: 1px solid #ececec
+    &__item
+      text-align: center
+      padding-left: 0
+      &:last-child
+        border-bottom: 1px solid #ececec
+  .header__child-center
+    text-align: center
+    margin: 20px 0
+    &-mobile
+      text-align: center
+    &_link
+      color: #f3762e
+      font-family: "ProbaPro-Regular", sans-serif
+      font-size: 18px
+      line-height: 30px
+      transition: all 0.3s linear
+
+.burger
+  display: flex
+  order: 1
+  flex-wrap: wrap
+  align-items: center
+  justify-content: center
+  width: 25px
+  z-index: 1
+  &__item
+    display: inline-block
+    flex: 0 0 100%
+    height: 2px
+    background-color: #000
+    margin: 2.5px
+    transition: all 0.25s linear
+  &-active
+    .burger__item
+      &:nth-of-type(3)
+        display: none
+      &:nth-of-type(1)
+        transform: rotate(45deg) translateY(5px)
+      &:nth-of-type(2)
+        transform: rotate(-45deg) translateY(-5px)
+
+@media screen and (min-width: 768px)
+  .header
+    &__container
+      height: 80px
+    &__logo
+      width: 70px
+      height: 70px
+      &_link
+        width: 70px
+        height: 70px
+        transform: translateY(0)
+  .mobile
+    &__part
+      &-active
+        top: 80px
+
+@media screen and (min-width: 992px)
+  .burger
+    display: none
+  .header
+    &__container
+      max-width: 991px
+      margin: auto
+    &__logo
+      width: 120px
+      height: 117px
+      &_link
+        transform: translateY(40px)
+        width: 120px
+        height: 117px
+    &__menu
+      position: relative
+    &__child-center, &__social, &__language
+      display: block
+    &__language
+      justify-self: flex-start
+      margin-left: unset
+      margin-right: unset
+    &__child-center
+      &_link
+        color: #f3762e
+        font-family: "ProbaPro-Regular", sans-serif
+        font-size: 18px
+        line-height: 30px
+        transition: all 0.3s linear
+    &-list
+      display: flex
+      align-items: center
+      flex-wrap: nowrap
+      justify-content: flex-start
+      width: 100%
+      &__item
+        padding-left: 25px
+        &:first-child
+          padding-left: 0
+      &__link
+        color: #000000
+        font-family: "ProbaPro-Regular", sans-serif
+        font-size: 18px
+        line-height: 30px
+        transition: all 0.3s linear
+
+@media screen and (min-width: 1200px)
+  .header
+    &__container
+      max-width: 1200px
+
+/*/ HEADER */
+

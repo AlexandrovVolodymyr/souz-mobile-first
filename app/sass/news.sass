@@ -1,0 +1,295 @@
+/* NEWS */
+
+@import 'vars'
+@import 'mixins'
+@import 'fonts'
+
+#news-post
+  padding: 1rem
+.news
+  background-color: #4eb748
+  padding-bottom: 60px
+  overflow: hidden
+  position: relative
+  .slick-dots
+    bottom: -30px
+    li
+      button
+        background-color: #fff
+  &__container
+    margin: auto
+    padding: 0 1rem
+    width: 80%
+  &__title
+    color: #ffffff
+    font-family: "ProbaPro-Bold", sans-serif
+    font-size: 40px
+    line-height: 50px
+    letter-spacing: 0.21px
+    padding-top: 40px
+    margin-bottom: 30px
+    text-align: center
+  &__item
+    text-align: center
+  &__count
+    display: none
+    color: #ffffff
+    font-size: 18px
+    font-family: "ProbaPro-Medium", sans-serif
+    line-height: 40px
+    text-align: center
+  &__image
+    img
+      width: 200px
+      height: 200px
+      margin: auto
+  &__arrows
+    &-left
+      position: absolute
+      left: -20px
+      top: 35%
+      //transform: translateY(50%)
+      transition: all 0.15s linear
+      img
+        width: 50px
+        height: 50px
+    &-right
+      position: absolute
+      right: -20px
+      top: 35%
+      //transform: translateY(150%)
+      transition: all 0.15s linear
+      img
+        width: 50px
+        height: 50px
+  &__text
+    &-normal
+      color: #ffffff
+      display: block
+      font-family: "ProbaPro-Medium", sans-serif
+      line-height: 20px
+      font-size: 18px
+      max-width: 310px
+      margin: auto
+      min-height: 90px
+      word-wrap: break-word
+    &-lighten
+      color: #ffffff
+      display: block
+      font-family: "ProbaPro-Regular", sans-serif
+      font-size: 16px
+      line-height: 30px
+      opacity: 0.5
+
+@media screen and (min-width: 350px)
+  .news
+    &__image
+      img
+        width: 250px
+        height: 250px
+    &__text
+      &-normal
+        font-size: 24px
+        line-height: 30px
+      &-lighten
+        font-size: 20px
+        line-height: 30px
+@media screen and (min-width: 768px)
+  .news
+    padding-bottom: 100px
+    .slick-prev
+      &:hover
+        left: -15px
+      .slick-next
+        &:hover
+          right: -15px
+@media screen and (min-width: 992px)
+  .news
+    .slick-center
+      padding-bottom: 5rem
+      transform: translateY(5rem)
+      transition: transform 0.5s ease-in-out
+    &__arrows
+      img
+        width: 90px
+        height: 90px
+      &-left
+        left: -45px
+        &:hover
+          left: -35px
+      &-right
+        right: -45px
+        &:hover
+          right: -35px
+    &__container
+      width: 900px
+      margin: auto
+      padding: 0 1rem
+    &__image
+      img
+        width: 220px
+        height: 220px
+@media screen and (min-width: 1200px)
+  .news
+    &__container
+      width: 1000px
+    &__count
+      display: block
+      font-size: 24px
+      font-family: "ProbaPro-Medium", sans-serif
+      line-height: 40px
+
+@media screen and (min-width: 1300px)
+  .news
+    &__container
+      width: 1200px
+    &__image
+      img
+        width: 320px
+        height: 320px
+/*/ NEWS */
+
+
+/* NEWS-POST */
+.news-post
+  padding-top: 50px
+  &__number
+    opacity: 0.5
+    color: #383838
+    font-family: "ProbaPro-Regular", sans-serif
+    font-size: 14px
+    line-height: 20px
+    text-align: left
+  &__title
+    color: #383838
+    font-family: "ProbaPro-Bold", sans-serif
+    font-size: 32px
+    line-height: 36px
+    text-align: left
+    max-width: 100%
+  .header__social
+    font-size: 0
+    height: 40px
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 40px 0
+    .studio-about__share
+      color: #383838
+      font-size: 16px
+      height: 40px
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      margin-right: 25px
+    img
+      margin: 0 5px
+  &__content
+    display: flex
+    flex-wrap: wrap
+    justify-content: flex-start
+  &__image
+    text-align: left
+    flex: 0 0 100%
+    max-width: 100%
+    img
+      width: 240px
+      height: 240px
+  &__description
+    text-align: left
+    flex: 0 0 100%
+    max-width: 100%
+  &__text
+    &-default
+      color: #383838
+      font-family: "Circe - Regular", sans-serif
+      font-size: 16px
+      line-height: 24px
+      &:not(:first-child)
+        margin-bottom: 20px
+        margin-top: 40px
+    &-quote
+      font-family: "Circe - Regular", sans-serif
+      font-size: 18px
+      line-height: 26px
+      margin-top: 40px
+    &-orange
+      color: #f3762e
+  &__picture
+    img
+      width: 100%
+    &_text
+      opacity: 0.5
+      color: #000000
+      font-family: "Circe - Regular", sans-serif
+      font-size: 16px
+      line-height: 20px
+  &__video
+    &_text
+      opacity: 0.5
+      color: #000000
+      font-family: "Circe - Regular", sans-serif
+      font-size: 16px
+      line-height: 20px
+  &__subtitle
+    color: #383838
+    font-family: "Circe Bold", sans-serif
+    font-weight: 700
+    font-size: 18px
+    line-height: 26px
+    margin-top: 60px
+    margin-bottom: -30px
+    
+
+@media screen and (min-width: 580px)
+  .news-post
+    &__description
+      padding: 0 1rem
+    &__description
+      padding: 0 1rem
+    &__image
+      padding: 0 1rem
+      text-align: center
+      img
+        width: auto
+        height: auto
+    &__text
+      &-mini
+        font-size: 18px
+      &-quote
+        font-size: 24px
+        line-height: 34px
+      &-default
+        font-size: 20px
+        line-height: 30px
+
+@media screen and (min-width: 769px)
+  .news-post
+    &__description, &__image
+      flex: 0 0 50%
+      max-width: 50%
+    &__image
+      img
+        width: 100%
+    &__title
+      font-size: 42px
+      line-height: 48px
+      text-align: center
+      max-width: 960px
+      margin: auto
+    &__number
+      opacity: 0.5
+      font-size: 20px
+      line-height: 30px
+      text-align: center
+@media screen and (min-width: 992px)
+  .news-post
+    &__container
+      max-width: 992px
+      margin: auto
+@media screen and (min-width: 1200px)
+  .news-post
+    &__container
+      max-width: 1200px
+      margin: auto
+/*/ NEWS-POST */

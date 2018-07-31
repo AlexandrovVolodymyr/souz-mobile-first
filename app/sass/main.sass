@@ -1,0 +1,148 @@
+/* default styles for all pages */
+
+@import 'vars'
+@import 'mixins'
+@import 'fonts'
+@import 'header.sass'
+@import 'gallery.sass'
+@import 'news.sass'
+@import 'studio.sass'
+@import 'vacancies.sass'
+@import 'contacts.sass'
+//@import 'tabs.sass'
+@import 'fancybox-custom.sass'
+
+
+@font-face
+	font-family: "ProbaPro-Regular"
+	src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff")
+	src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2")
+	font-style: normal
+	font-weight: 400
+
+@font-face
+  font-family: "ProbaPro-Bold"
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff") format("woff")
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff2") format("woff2")
+  font-style: normal
+  font-weight: 700
+
+@font-face
+  font-family: "ProbaPro-Medium"
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff") format("woff")
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff2") format("woff2")
+  font-style: normal
+  font-weight: 500
+
+@font-face
+  font-family: "LucidGrande-Regular"
+  src: url("../fonts/LucidaGrande/LucidaGrande.ttf") format("ttf")
+  font-style: normal
+  font-weight: 400
+
+*
+  box-sizing: border-box
+  &:hover, &:active, &:focus
+      outline: none
+
+html
+  font-family: Helvetica, Arial, sans-serif
+  font-size: 16px
+  height: 100%
+
+.body
+  margin: 0
+  padding: 0
+  &-locked
+    overflow-y: hidden
+
+ul
+  padding: 0
+  margin: 0
+  list-style: none
+
+select
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+
+select::-ms-expand
+  display: none
+
+a
+  text-decoration: none
+
+section
+  position: relative
+
+.animate-line2
+  position: absolute
+  bottom: 0
+  z-index: 2
+  margin-bottom: -1px
+  width: 100%
+  pointer-events: none
+  svg
+    display: block
+    width: 100% !important
+    height: 100% !important
+    top: 0 !important
+
+.animate-line
+  position: absolute
+  z-index: 2
+  width: 100%
+  pointer-events: none
+  svg
+    display: block
+    left: 0 !important
+    width: 100%
+    top: -1px !important
+
+.slick-dots
+  display: flex
+  position: absolute
+  left: 50%
+  bottom: 40px
+  transform: translateX(-50%)
+  z-index: 4
+  li
+    margin: 0 5px
+    &.slick-active
+      button
+        opacity: 1
+    button
+      background-color: #383838
+      border-radius: 50%
+      border: none
+      cursor: pointer
+      font-size: 0
+      display: block
+      width: 5px
+      height: 5px
+      opacity: 0.2
+      padding: 0
+      margin: 0
+
+.map
+  width: 100%
+  height: 300px
+  &-section
+    position: relative
+    display: flex
+    flex-flow: column
+    justify-content: center
+    align-items: center
+    overflow: hidden
+
+@media screen and (min-width: 425px)
+  .slick-dots
+    li
+      button
+        width: 10px
+        height: 10px
+
+@media screen and (min-width: 580px)
+  .map
+    height: 600px
+//@import "media"

@@ -1,0 +1,121 @@
+/* STUDIO */
+
+@import 'vars'
+@import 'mixins'
+@import 'fonts'
+
+.studio
+  background-color: #f3762e
+  padding-bottom: 160px
+  &__container
+    width: 100%
+    padding: 0 1rem
+  &__title
+    color: #ffffff
+    font-family: "ProbaPro-Bold", sans-serif
+    font-size: 40px
+    line-height: 50px
+    letter-spacing: 0.21px
+    text-align: center
+    padding-top: 40px
+    margin-bottom: 5px
+  &__description
+    text-align: center
+    position: relative
+  &__text
+    color: #ffffff
+    font-family: "ProbaPro-Medium", sans-serif
+    font-size: 18px
+    line-height: 25px
+    margin: auto
+    width: 100%
+  &__link
+    background-color: #ffffff
+    border-radius: 45px
+    color: #383838
+    font-family: "ProbaPro-Bold", sans-serif
+    font-weight: 700
+    font-size: 10px
+    line-height: 20px
+    text-transform: uppercase
+    letter-spacing: 1.5px
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 150px
+    height: 30px
+    margin: 25px auto
+    position: relative
+    z-index: 2
+  &-icons
+    font-size: 0
+    position: relative
+    &-bird
+      position: absolute
+      left: 25px
+      width: 28px
+      height: 30px
+      bottom: 0
+    &-karlson
+      width: 250px
+      height: 200px
+      bottom: -40px
+      right: 50%
+      position: absolute
+      z-index: 3
+      transform: translateX(50%)
+
+@media screen and (min-width: 580px)
+  .studio
+    &__description
+      max-width: 70%
+      margin: auto
+    &-icons
+      &-bird
+        left: -50px
+
+@media screen and (min-width: 768px)
+  .studio
+    padding-bottom: 320px
+    &__container
+      max-width: 991px
+      margin: auto
+    &__title
+      font-size: 70px
+      line-height: 50px
+      letter-spacing: 0.21px
+      padding-top: 120px
+      margin-bottom: 60px
+    &__text
+      font-size: 32px
+      line-height: 48px
+    &__link
+      font-size: 18px
+      line-height: 20px
+      letter-spacing: 1.5px
+      margin: 80px auto 0
+      width: 300px
+      height: 50px
+      text-transform: uppercase
+    &-icons
+      &-bird
+        bottom: -20px
+        width: auto
+        height: auto
+      &-karlson
+        bottom: -60px
+        width: 385px
+        height: 306px
+
+@media screen and (min-width: 992px)
+  .studio
+    &__container
+      max-width: 1200px
+    &__description
+      max-width: 70%
+@media screen and (min-width: 1200px)
+  .studio
+    &__description
+      max-width: 80%
+
+/*/ STUDIO */

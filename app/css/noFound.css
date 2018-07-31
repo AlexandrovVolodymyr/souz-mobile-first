@@ -1,0 +1,8 @@
+/* NO FOUND, ERROR 404 */
+@import url(../fonts/ft40/ft40.css);
+@import url(../fonts/AG Book Pro Regular/AG Book Pro Regular.css);
+@import url(../fonts/AG Book Pro Bold/AG Book Pro Bold.css);
+.no-found {
+  background-color: #f3762e;
+  width: 100vh;
+  height: 100vh; }

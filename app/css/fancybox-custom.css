@@ -1,0 +1,46 @@
+/* FANCY BOX 3 custom */
+@import url(../fonts/ft40/ft40.css);
+@import url(../fonts/AG Book Pro Regular/AG Book Pro Regular.css);
+@import url(../fonts/AG Book Pro Bold/AG Book Pro Bold.css);
+.fancybox-close-small {
+  width: 50px !important;
+  height: 50px !important;
+  background: #383838 !important;
+  -webkit-border-radius: 50% !important;
+          border-radius: 50% !important;
+  color: #fff !important;
+  top: 1rem !important;
+  right: 1rem !important; }
+  .fancybox-close-small svg {
+    opacity: 1 !important; }
+
+.fancybox-button {
+  -webkit-border-radius: 50% !important;
+          border-radius: 50% !important;
+  background-color: #fff !important;
+  color: #000 !important;
+  opacity: 1 !important;
+  top: 45px !important;
+  width: 50px !important;
+  height: 50px !important; }
+
+.fancybox-button--arrow_left {
+  left: 140px !important; }
+
+.fancybox-button--arrow_right {
+  right: auto !important;
+  left: 200px !important; }
+
+.fancybox-infobar {
+  color: #fff !important;
+  mix-blend-mode: unset !important;
+  left: 260px !important;
+  top: 50px !important; }
+  .fancybox-infobar span {
+    color: #fff;
+    font-size: 24px;
+    font-family: "ProbaPro-Medium", sans-serif;
+    line-height: 40px;
+    text-align: center; }
+    .fancybox-infobar span:last-child {
+      opacity: 0.25; }

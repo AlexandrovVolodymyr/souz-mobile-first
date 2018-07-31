@@ -1,0 +1,74 @@
+/* full page slider */
+
+@import 'vars'
+@import 'mixins'
+@import 'fonts'
+
+.gallery
+  font-size: 0
+  padding-top: 50px
+  position: relative
+  overflow: hidden
+  .slick-dots
+    bottom: 10px
+  .slick-arrow
+    cursor: pointer
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    transition: all 0.15s linear
+    z-index: 1
+    img
+      width: 50px
+      height: 50px
+  .slick-prev
+    left: -20px
+  .slick-next
+    right: -20px
+  &__item
+    width: 100%
+    background-position: 50%
+    background-size: cover
+    height: 200px
+@media screen and (min-width: 580px)
+  .gallery
+    &__item
+      height: 350px
+@media screen and (min-width: 768px)
+  .gallery
+    .slick-prev
+      &:hover
+        left: -15px
+    .slick-next
+      &:hover
+        right: -15px
+    &__item
+      height: 760px
+@media screen and (min-width: 992px)
+  .gallery
+    .slick-dots
+      bottom: 40px
+    .slick-arrow
+      img
+        width: 90px
+        height: 90px
+    .slick-prev
+      left: -45px
+      &:hover
+        left: -30px
+    .slick-next
+      right: -45px
+      &:hover
+        right: -30px
+
+@media screen and (min-width: 1301px)
+  .gallery
+    .slick-prev
+      left: -35px
+      &:hover
+        left: -15px
+    .slick-next
+      right: -35px
+      &:hover
+        right: -15px
+/*/ full page slider */

@@ -1,0 +1,127 @@
+/* STUDIO */
+@import url(../fonts/ft40/ft40.css);
+@import url(../fonts/AG Book Pro Regular/AG Book Pro Regular.css);
+@import url(../fonts/AG Book Pro Bold/AG Book Pro Bold.css);
+.studio {
+  background-color: #f3762e;
+  padding-bottom: 160px; }
+  .studio__container {
+    width: 100%;
+    padding: 0 1rem; }
+  .studio__title {
+    color: #ffffff;
+    font-family: "ProbaPro-Bold", sans-serif;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.21px;
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 5px; }
+  .studio__description {
+    text-align: center;
+    position: relative; }
+  .studio__text {
+    color: #ffffff;
+    font-family: "ProbaPro-Medium", sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    margin: auto;
+    width: 100%; }
+  .studio__link {
+    background-color: #ffffff;
+    -webkit-border-radius: 45px;
+            border-radius: 45px;
+    color: #383838;
+    font-family: "ProbaPro-Bold", sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 150px;
+    height: 30px;
+    margin: 25px auto;
+    position: relative;
+    z-index: 2; }
+  .studio-icons {
+    font-size: 0;
+    position: relative; }
+    .studio-icons-bird {
+      position: absolute;
+      left: 25px;
+      width: 28px;
+      height: 30px;
+      bottom: 0; }
+    .studio-icons-karlson {
+      width: 250px;
+      height: 200px;
+      bottom: -40px;
+      right: 50%;
+      position: absolute;
+      z-index: 3;
+      -webkit-transform: translateX(50%);
+          -ms-transform: translateX(50%);
+              transform: translateX(50%); }
+
+@media screen and (min-width: 580px) {
+  .studio__description {
+    max-width: 70%;
+    margin: auto; }
+  .studio-icons-bird {
+    left: -50px; } }
+
+@media screen and (min-width: 768px) {
+  .studio {
+    padding-bottom: 320px; }
+    .studio__container {
+      max-width: 991px;
+      margin: auto; }
+    .studio__title {
+      font-size: 70px;
+      line-height: 50px;
+      letter-spacing: 0.21px;
+      padding-top: 120px;
+      margin-bottom: 60px; }
+    .studio__text {
+      font-size: 32px;
+      line-height: 48px; }
+    .studio__link {
+      font-size: 18px;
+      line-height: 20px;
+      letter-spacing: 1.5px;
+      margin: 80px auto 0;
+      width: 300px;
+      height: 50px;
+      text-transform: uppercase; }
+    .studio-icons-bird {
+      bottom: -20px;
+      width: auto;
+      height: auto; }
+    .studio-icons-karlson {
+      bottom: -60px;
+      width: 385px;
+      height: 306px; } }
+
+@media screen and (min-width: 992px) {
+  .studio__container {
+    max-width: 1200px; }
+  .studio__description {
+    max-width: 70%; } }
+
+@media screen and (min-width: 1200px) {
+  .studio__description {
+    max-width: 80%; } }
+
+/*/ STUDIO */

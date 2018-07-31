@@ -1,0 +1,504 @@
+@import url(../fonts/ft40/ft40.css);
+@import url(../fonts/AG Book Pro Regular/AG Book Pro Regular.css);
+@import url(../fonts/AG Book Pro Bold/AG Book Pro Bold.css);
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
+#tabs-container, #tabs-container2 {
+  margin-top: 25px;
+  overflow: hidden; }
+
+#tabs-container .tabs-menu,
+#tabs-container2 .tabs-menu {
+  clear: both;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px; }
+
+#tabs-container .tabs-menu li,
+#tabs-container2 .tabs-menu li {
+  border: 2px solid #fff;
+  cursor: pointer;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  min-width: 200px;
+  text-align: center;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  color: #e6e6e6;
+  padding: 0 25px;
+  text-transform: uppercase; }
+
+#tabs-container .tabs-menu li.current,
+#tabs-container2 .tabs-menu li.current2 {
+  border: 2px solid #ff3323;
+  position: relative;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  background-color: #ff3323;
+  color: #e6e6e6;
+  -webkit-box-shadow: 0 0 57px 5px #ff3323;
+          box-shadow: 0 0 57px 5px #ff3323;
+  z-index: 5; }
+  #tabs-container .tabs-menu li.current:hover,
+  #tabs-container2 .tabs-menu li.current2:hover {
+    color: #e6e6e6;
+    text-decoration: none; }
+
+#tabs-container .tab,
+#tabs-container2 .tab {
+  background-color: transparent;
+  min-height: 309px;
+  width: auto; }
+
+#tabs-container2 .tab {
+  min-height: 870px; }
+
+#tabs-container .tab-content,
+#tabs-container2 .tab-content {
+  width: auto;
+  display: none; }
+
+#tabs-container .tab-content p,
+#tabs-container2 .tab-content p {
+  font-size: 16px;
+  padding: 0; }
+
+#tab-1, #tab11 {
+  display: block; }
+
+#tabs-container .tab_last,
+#tabs-container2 .tab_last2 {
+  border-right: 1px solid #333; }
+
+#tabs-container .tab_drawer_heading,
+#tabs-container2 .tab_drawer_heading {
+  display: none; }
+
+#tab1, #tab11,
+#tab2, #tab22,
+#tab3, #tab33,
+#tab4, #tab44 {
+  overflow: hidden; }
+
+@media screen and (max-width: 767px) {
+  #tabs-container .tabs-menu,
+  #tabs-container2 .tabs-menu {
+    display: none; }
+  #tabs-container .tab_drawer_heading,
+  #tabs-container2 .tab_drawer_heading {
+    border: 2px solid #fff;
+    cursor: pointer;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    max-width: 320px;
+    margin: auto;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2px;
+    color: #e6e6e6;
+    margin-bottom: 15px;
+    padding: 0 25px;
+    text-transform: uppercase; }
+  #tabs-container .d_active,
+  #tabs-container2 .d_active2 {
+    border: 2px solid #ff3323;
+    position: relative;
+    -webkit-border-radius: 2px;
+            border-radius: 2px;
+    background-color: #ff3323;
+    color: #e6e6e6;
+    -webkit-box-shadow: 0 0 57px 5px #ff3323;
+            box-shadow: 0 0 57px 5px #ff3323;
+    z-index: 5; }
+    #tabs-container .d_active:hover,
+    #tabs-container2 .d_active2:hover {
+      color: #e6e6e6;
+      text-decoration: none; } }
+
+.gallery {
+  padding-bottom: 160px; }
+  .gallery__title {
+    color: #ff3323;
+    font-family: 'ft40', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2; }
+  .gallery__digits {
+    letter-spacing: 1px;
+    padding-right: 5px; }
+  .gallery__line {
+    border-top: 1px solid #ff3323;
+    display: inline-block;
+    padding-bottom: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+    width: 130px; }
+  .gallery__text {
+    font-size: 20px;
+    display: inline-block;
+    color: #ff3323;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    padding-left: 5px;
+    -webkit-transform: scale(1, 1.19);
+        -ms-transform: scale(1, 1.19);
+            transform: scale(1, 1.19); }
+  .gallery__images .col-md-4 {
+    margin-bottom: 20px; }
+  .gallery__images-more {
+    display: none;
+    opacity: 0;
+    -webkit-transition: height 0.3s linear, opacity 1s linear;
+    -o-transition: height 0.3s linear, opacity 1s linear;
+    transition: height 0.3s linear, opacity 1s linear; }
+  .gallery__link {
+    display: block; }
+    .gallery__link:hover img {
+      -webkit-filter: none;
+              filter: none; }
+    .gallery__link:hover .gallery__zoom {
+      display: block; }
+    .gallery__link img {
+      width: 100%;
+      height: 270px;
+      -webkit-filter: grayscale(100%);
+              filter: grayscale(100%); }
+  .gallery__videos .col-md-6 {
+    padding-bottom: 15px; }
+  .gallery__zoom {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 25px !important;
+    height: 25px !important; }
+
+.coach__title {
+  color: #ff3323;
+  font-family: 'ft40', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2; }
+
+.coach__digits {
+  letter-spacing: 1px;
+  padding-right: 5px; }
+
+.coach__line {
+  border-top: 1px solid #ff3323;
+  display: inline-block;
+  padding-bottom: 10px;
+  padding-left: 2px;
+  padding-right: 2px;
+  width: 130px; }
+
+.coach__text {
+  font-size: 20px;
+  display: inline-block;
+  color: #ff3323;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  padding-left: 5px;
+  -webkit-transform: scale(1, 1.19);
+      -ms-transform: scale(1, 1.19);
+          transform: scale(1, 1.19); }
+
+.coach__inside {
+  margin: 50px 0 40px; }
+
+.coach__name {
+  font-size: 26px;
+  font-family: "AG Book Pro Bold", sans-serif;
+  color: white;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1.2;
+  -webkit-transform: scale(1, 1.19);
+      -ms-transform: scale(1, 1.19);
+          transform: scale(1, 1.19); }
+
+.coach__date {
+  font-size: 15px;
+  font-family: "AG Book Pro Regular", sans-serif;
+  color: #777777;
+  line-height: 1.2; }
+
+.coach__image {
+  border-left: 2px solid #ff3323; }
+
+.coach__info {
+  padding-top: 25px; }
+  .coach__info p {
+    font-size: 15px;
+    font-family: "AG Book Pro Regular", sans-serif;
+    color: white;
+    line-height: 1.333;
+    letter-spacing: 1px; }
+
+.coach__characteristic-number {
+  font-size: 20px;
+  font-family: 'Roboto Slab', serif;
+  color: #ff3323;
+  line-height: 1; }
+
+.coach__characteristic-text {
+  font-size: 16px;
+  font-family: "AG Book Pro Regular", sans-serif;
+  color: white;
+  line-height: 1.333; }
+
+.training {
+  padding: 60px 0; }
+  .training__title {
+    color: #ff3323;
+    font-family: 'ft40', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2; }
+  .training__digits {
+    letter-spacing: 1px;
+    padding-right: 5px; }
+  .training__line {
+    border-top: 1px solid #ff3323;
+    display: inline-block;
+    padding-bottom: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+    width: 130px; }
+  .training__text {
+    font-size: 20px;
+    display: inline-block;
+    color: #ff3323;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    padding-left: 5px;
+    -webkit-transform: scale(1, 1.19);
+        -ms-transform: scale(1, 1.19);
+            transform: scale(1, 1.19); }
+  .training__days {
+    font-size: 20px;
+    font-family: "AG Book Pro Bold", sans-serif;
+    color: #fefefe;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding-top: 25px; }
+    .training__days span {
+      display: inline-block;
+      border: 1px solid #626262;
+      padding: 15px;
+      margin-right: 20px; }
+      .training__days span:last-child {
+        margin-right: 0; }
+  .training__start {
+    font-size: 20px;
+    color: #fefefe;
+    font-family: 'ft40', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    margin-top: 50px; }
+  .training__group {
+    border-left: 2px solid #ff3323; }
+    .training__group-not-working {
+      text-align: center;
+      position: relative; }
+      .training__group-not-working .training__ticket-text {
+        font-size: 21px; }
+      .training__group-not-working .training__cost {
+        font-size: 24px; }
+      .training__group-not-working .training__title-group {
+        border-left: none;
+        padding-left: 0; }
+    .training__group-quote {
+      position: absolute;
+      top: 25px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      font-size: 12px;
+      font-family: "AG Book Pro Bold", sans-serif;
+      color: #cccccc; }
+  .training__title-group {
+    border-left: 2px solid #ff3323;
+    font-size: 20px;
+    font-family: "AG Book Pro Bold", sans-serif;
+    color: #fefefe;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+    padding-left: 10px; }
+  .training__ticket {
+    margin-top: 56.25px; }
+    .training__ticket-text {
+      font-size: 17px;
+      font-family: "AG Book Pro Regular", sans-serif;
+      color: #fefefe;
+      text-transform: uppercase;
+      line-height: 1.471;
+      letter-spacing: 1.5px; }
+  .training__cost {
+    color: #ff3323;
+    font-size: 24px;
+    font-family: "AG Book Pro Bold", sans-serif;
+    font-weight: bold;
+    line-height: 1.471;
+    letter-spacing: 2px;
+    margin-left: 15px; }
+
+.advantage {
+  position: relative;
+  z-index: 11; }
+  .advantage__title {
+    color: #ff3323;
+    font-family: 'ft40', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2; }
+  .advantage__digits {
+    letter-spacing: 1px;
+    padding-right: 5px; }
+  .advantage__line {
+    border-top: 1px solid #ff3323;
+    display: inline-block;
+    padding-bottom: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+    width: 130px; }
+  .advantage__text {
+    font-size: 20px;
+    display: inline-block;
+    color: #ff3323;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    padding-left: 5px;
+    -webkit-transform: scale(1, 1.19);
+        -ms-transform: scale(1, 1.19);
+            transform: scale(1, 1.19); }
+  .advantage__icons {
+    margin: 50px 0; }
+  .advantage__type {
+    display: block;
+    font-size: 13px;
+    font-family: "AG Book Pro Regular", sans-serif;
+    color: white;
+    line-height: 1.2;
+    max-width: 50%;
+    margin: 20px auto;
+    -webkit-transform: scale(1, 1.19);
+        -ms-transform: scale(1, 1.19);
+            transform: scale(1, 1.19); }
+    .advantage__type-upper {
+      font-size: 16px;
+      font-family: "AG Book Pro Bold", sans-serif;
+      color: white;
+      font-weight: 800;
+      line-height: 1.2;
+      letter-spacing: 1.5px;
+      display: block;
+      padding-top: 10px;
+      text-transform: uppercase;
+      -webkit-transform: scale(1, 1.19);
+          -ms-transform: scale(1, 1.19);
+              transform: scale(1, 1.19); }
+  .advantage__half .advantage__type {
+    max-width: 30%; }
+
+.more {
+  height: 24px; }
+  .more__link {
+    font-size: 16px;
+    font-family: "AG Book Pro Bold", sans-serif;
+    color: #ff3323;
+    font-weight: bold;
+    line-height: 1.2; }
+    .more__link:hover {
+      color: #ff3323;
+      text-decoration: none; }
+
+.advantage-section {
+  position: relative;
+  padding: 100px 0; }
+  .advantage-section:before {
+    background: url("../img/shines/clouds.png") no-repeat 0 center/cover;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10; }
+
+.coach-section {
+  position: relative;
+  padding: 100px 0; }
+  .coach-section:before {
+    background: url("../img/shines/trener.png") no-repeat 100% 60%/cover;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10; }
+
+.gallery-section {
+  position: relative;
+  padding-top: 60px; }
+  .gallery-section:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 150px;
+    width: 100%;
+    height: 100%;
+    z-index: 10; }
+
+.training-section {
+  position: relative; }
+  .training-section:before {
+    background: url("../img/shines/training.png") no-repeat 0/contain;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10; }
+  .training-section:after {
+    background: url("../img/shines/training.png") no-repeat 85% -350px/contain;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10; }

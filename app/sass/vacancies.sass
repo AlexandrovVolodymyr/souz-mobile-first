@@ -1,0 +1,93 @@
+/* VACANCIES */
+
+@import 'vars'
+@import 'mixins'
+@import 'fonts'
+
+.vacancies
+  background: #635eaa
+  &-section
+    font-size: 0
+  &__container
+    padding: 0 1rem
+    position: relative
+  &__icon
+    position: absolute
+    bottom: -80px
+    left: 1rem
+    transform: translateY(-50%)
+    width: 80px
+    z-index: 4
+    img
+      width: 100%
+      height: 100%
+  &__title
+    color: #ffffff
+    font-family: "ProbaPro-Bold", sans-serif
+    font-size: 40px
+    line-height: 30px
+    padding-bottom: 35px
+    padding-top: 35px
+    text-align: center
+  &__list
+    display: flex
+    flex-wrap: wrap
+  &__link
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5)
+    color: #ffffff
+    display: block
+    font-family: "ProbaPro-Medium", sans-serif
+    font-size: 18px
+    padding: 12.5px 0
+    text-align: center
+    transition: all 0.3s linear
+    &:hover
+      background-color: #fff
+      color: #383838
+  &__item
+    flex: 0 0 100%
+    max-width: 100%
+  &__footer
+    padding-top: 25px
+    padding-bottom: 50px
+    text-align: center
+    &-link
+      color: #ffffff
+      display: inline-block
+      font-family: "ProbaPro-Regular", sans-serif
+      font-size: 16px
+      line-height: 22px
+      margin-top: 10px
+      margin-bottom: 60px
+      text-decoration: underline
+    &-text
+      color: #ffffff
+      font-family: "ProbaPro-Regular", sans-serif
+      font-size: 16px
+      line-height: 22px
+
+@media screen and (min-width: 768px)
+  .vacancies
+    &__list
+      max-width: 760px
+      margin: auto
+
+@media screen and (min-width: 992px)
+  .vacancies
+    &__link
+      font-size: 24px
+      padding: 28.5px 0
+    &__icon
+      top: 50%
+      bottom: auto
+      height: 350px
+      width: 200px
+
+@media screen and (min-width: 1200px)
+  .vacancies
+    &__title
+      font-size: 72px
+      line-height: 50px
+      padding-top: 120px
+      padding-bottom: 60px
+/*/ VACANCIES */
