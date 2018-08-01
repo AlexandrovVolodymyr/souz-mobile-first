@@ -9,7 +9,16 @@ var gulp = require('gulp'),
 	imagemin = require('gulp-imagemin'),
 	pngquant = require('imagemin-pngquant'),
 	cache = require('gulp-cache'),
-	autoprefixer = require('gulp-autoprefixer');
+	autoprefixer = require('gulp-autoprefixer'),
+	gcmq = require('gulp-group-css-media-queries');
+
+/*
+gulp.task('default', function () {
+  gulp.src('src/style.css')
+      .pipe(gcmq())
+      .pipe(gulp.dest('dist'));
+});
+*/
 
 gulp.task('sass', function() {
 	return gulp.src('app/sass/**/*.+(scss|sass)')
