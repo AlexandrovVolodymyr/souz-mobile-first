@@ -1,7 +1,17 @@
 /* CONTACTS */
-@import url(../fonts/ft40/ft40.css);
-@import url(../fonts/AG Book Pro Regular/AG Book Pro Regular.css);
-@import url(../fonts/AG Book Pro Bold/AG Book Pro Bold.css);
+/* FONTS */
+@font-face {
+  font-family: "ProbaPro";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal; }
+
+@font-face {
+  font-family: "LucidGrande-Regular";
+  src: url("../fonts/LucidaGrande/LucidaGrande.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 400; }
+
 .contacts-white-bg {
   width: 100%;
   margin-top: 1rem; }
@@ -62,19 +72,15 @@
   .contacts__content-row {
     border-top: 2px solid rgba(255, 255, 255, 0.5);
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
   .contacts__cat, .contacts__description {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 100%;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
     max-width: 100%;
@@ -134,7 +140,6 @@
       top: -50%; }
     .contacts__description, .contacts__cat {
       -webkit-box-flex: 0;
-      -webkit-flex: 0 0 50%;
           -ms-flex: 0 0 50%;
               flex: 0 0 50%;
       max-width: 50%;

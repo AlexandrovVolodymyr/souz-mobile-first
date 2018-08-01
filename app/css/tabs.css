@@ -1,7 +1,17 @@
 /* TABS */
-@import url(../fonts/ft40/ft40.css);
-@import url(../fonts/AG Book Pro Regular/AG Book Pro Regular.css);
-@import url(../fonts/AG Book Pro Bold/AG Book Pro Bold.css);
+/* FONTS */
+@font-face {
+  font-family: "ProbaPro";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal; }
+
+@font-face {
+  font-family: "LucidGrande-Regular";
+  src: url("../fonts/LucidaGrande/LucidaGrande.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 400; }
+
 .tabs-container {
   position: relative;
   padding: 0 1rem; }
@@ -11,15 +21,12 @@ ul.tabs {
   padding: 0px;
   list-style: none;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
   ul.tabs li {
@@ -28,7 +35,8 @@ ul.tabs {
     display: inline-block;
     padding: 15px 25px;
     cursor: pointer;
-    font-family: "ProbaPro-Bold", sans-serif;
+    font-family: "ProbaPro", sans-serif;
+    font-weight: 700;
     font-size: 18px;
     line-height: 20px;
     text-transform: uppercase;
@@ -39,8 +47,7 @@ ul.tabs {
     ul.tabs li:hover {
       color: #383838; }
     ul.tabs li.current {
-      -webkit-border-radius: 25px;
-              border-radius: 25px;
+      border-radius: 25px;
       background-color: #ffffff;
       color: #383838; }
 

@@ -1,0 +1,32 @@
+/* Slick slider custom */
+.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 4; }
+  .slick-dots li {
+    margin: 0 5px; }
+    .slick-dots li.slick-active button {
+      opacity: 1; }
+    .slick-dots li button {
+      background-color: #383838;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      font-size: 0;
+      display: block;
+      width: 5px;
+      height: 5px;
+      opacity: 0.2;
+      padding: 0;
+      margin: 0; }
+      @media screen and (min-width: 426px) {
+        .slick-dots li button {
+          width: 10px;
+          height: 10px; } }

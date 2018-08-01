@@ -12,6 +12,8 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="fonts/Circe/stylesheet.css">
 
+  <link rel="stylesheet" href="css/distorbed.css">
+
   <meta property="og:image" content="img/favicon/image.jpg">
   <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
@@ -31,7 +33,23 @@
   <header class="header">
     <div class="header__container">
       <div class="header__logo">
-        <a href="" class="header__logo_link" style="background-color: rgb(243, 118, 46);"></a>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
+          <defs>
+            <filter id="filter-goo-4">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur" x="0"></feGaussianBlur>
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo"></feColorMatrix>
+            </filter>
+          </defs>
+        </svg>
+        <button id="component-4" class=" header__logo_link button button--4">
+          <span class="header__logo_img"></span>
+          <span class="button__bg" style="filter: url('#filter-goo-4')">
+          <span class="blob"></span>
+          <span class="blob" style="transform: matrix(1, 0, 0, 1, -21, 0.6);"></span>
+          <span class="blob" style="transform: matrix(1, 0, 0, 1, -21, -0.6);"></span>
+          <span class="blob" style="transform: matrix(1, 0, 0, 1, 21, -0.6);"></span>
+          </span>
+        </button>
       </div>
       <div class="header__part">
         <div class="burger">
@@ -68,7 +86,7 @@
           </select>
         </div>
         <div class="header__social">
-          <a href="#" class="header__social-link">
+          <a href="https://www.google.com" class="header__social-link">
             <img src="img/vk.svg" alt="vkontakte">
           </a>
           <a href="#" class="header__social-link">
@@ -426,12 +444,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
   <script src="js/RaphaelLib.js"></script>
   <script src="js/common.js"></script>
-  <!--<script src="js/tabs-projects.js"></script>-->
+  <script src="js/tabs-projects.js"></script>
   <script src="js/navigation.js"></script>
   <!--<script src="js/studio-more.js"></script>-->
   <!--<script src="js/studio-video.js"></script>-->
   <script src="js/logo.js"></script>
   <script src="js/animationDivs.js"></script>
+  <script src="js/TweenMax.min.js"></script>
+  <script src="js/main.js"></script>
 
   <!--<script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>-->
   <!--<script src="js/map.js"></script>-->

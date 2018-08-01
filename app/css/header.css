@@ -1,7 +1,17 @@
 /* HEADER */
-@import url(../fonts/ft40/ft40.css);
-@import url(../fonts/AG Book Pro Regular/AG Book Pro Regular.css);
-@import url(../fonts/AG Book Pro Bold/AG Book Pro Bold.css);
+/* FONTS */
+@font-face {
+  font-family: "ProbaPro";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal; }
+
+@font-face {
+  font-family: "LucidGrande-Regular";
+  src: url("../fonts/LucidaGrande/LucidaGrande.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 400; }
+
 .header {
   background-color: #ffffff;
   position: fixed;
@@ -15,18 +25,14 @@
     width: 100%;
     padding: 0 1rem;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-align: center;
-    -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .header__logo {
@@ -35,43 +41,49 @@
     -webkit-transition: all 0.5s linear;
     -o-transition: all 0.5s linear;
     transition: all 0.5s linear; }
+    .header__logo .button--4 {
+      -webkit-transform: translateY(22.5px);
+          -ms-transform: translateY(22.5px);
+              transform: translateY(22.5px); }
+      .header__logo .button--4 .blob {
+        background-color: #f3762e; }
     .header__logo_link {
       display: inline-block;
-      -webkit-border-radius: 50%;
-              border-radius: 50%;
-      background: #f3762e url(../img/logo-text.png) no-repeat center/75%;
+      border-radius: 50%;
       width: 50px;
       height: 50px;
       -webkit-transition: background-color 0.5s linear;
       -o-transition: background-color 0.5s linear;
-      transition: background-color 0.5s linear;
-      -webkit-transform: translateY(22.5px);
-          -ms-transform: translateY(22.5px);
-              transform: translateY(22.5px); }
+      transition: background-color 0.5s linear; }
       .header__logo_link img {
         width: 50px;
         height: 50px; }
+    .header__logo_img {
+      background: url("../img/logo-new.svg");
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
     .header__logo-active {
       -webkit-transform: translateY(-150%);
           -ms-transform: translateY(-150%);
               transform: translateY(-150%); }
   .header__part {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 100%;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
-    max-width: -webkit-calc(100% - 120px);
     max-width: calc(100% - 120px);
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding-left: 60px; }
@@ -98,7 +110,8 @@
     cursor: pointer;
     opacity: 0.5;
     color: #383838;
-    font-family: "ProbaPro-Regular", sans-serif;
+    font-family: "ProbaPro", sans-serif;
+    font-weight: 400;
     line-height: 30px;
     letter-spacing: 0.18px; }
 
@@ -120,20 +133,19 @@
     opacity: 1;
     visibility: visible; }
   .mobile__part .header-list-mobile {
-    width: -webkit-calc(100% - 2rem);
     width: calc(100% - 2rem);
     margin: auto; }
     .mobile__part .header-list-mobile__item {
       border-top: 1px solid #ececec;
       -webkit-box-flex: 0;
-      -webkit-flex: 0 0 100%;
           -ms-flex: 0 0 100%;
               flex: 0 0 100%;
       padding: 0.5rem 0; }
     .mobile__part .header-list-mobile__link {
       color: #000000;
       display: block;
-      font-family: "ProbaPro-Regular", sans-serif;
+      font-family: "ProbaPro", sans-serif;
+      font-weight: 400;
       font-size: 18px;
       line-height: 30px;
       text-align: center;
@@ -156,7 +168,8 @@
       text-align: center; }
     .mobile__part .header__child-center_link {
       color: #f3762e;
-      font-family: "ProbaPro-Regular", sans-serif;
+      font-family: "ProbaPro", sans-serif;
+      font-weight: 400;
       font-size: 18px;
       line-height: 30px;
       -webkit-transition: all 0.3s linear;
@@ -165,22 +178,17 @@
 
 .burger {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-ordinal-group: 2;
-  -webkit-order: 1;
       -ms-flex-order: 1;
           order: 1;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   width: 25px;
@@ -188,7 +196,6 @@
   .burger__item {
     display: inline-block;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 100%;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
     height: 2px;
@@ -216,7 +223,8 @@
     height: 70px; }
     .header__logo_link {
       width: 70px;
-      height: 70px;
+      height: 70px; }
+    .header__logo .button--4 {
       -webkit-transform: translateY(0);
           -ms-transform: translateY(0);
               transform: translateY(0); }
@@ -233,11 +241,13 @@
     width: 120px;
     height: 117px; }
     .header__logo_link {
-      -webkit-transform: translateY(40px);
-          -ms-transform: translateY(40px);
-              transform: translateY(40px);
+      background: url("../img/logo-text.png") no-repeat;
       width: 120px;
       height: 117px; }
+    .header__logo .button--4 {
+      -webkit-transform: translateY(40px);
+          -ms-transform: translateY(40px);
+              transform: translateY(40px); }
   .header__menu {
     position: relative; }
   .header__child-center, .header__social, .header__language {
@@ -248,26 +258,25 @@
     margin-right: unset; }
   .header__child-center_link {
     color: #f3762e;
-    font-family: "ProbaPro-Regular", sans-serif;
+    font-family: "ProbaPro", sans-serif;
+    font-weight: 400;
     font-size: 18px;
     line-height: 30px;
     -webkit-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
     transition: all 0.3s linear; }
+    .header__child-center_link:hover {
+      opacity: 0.5; }
   .header-list {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-            flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
             justify-content: flex-start;
     width: 100%; }
@@ -277,12 +286,15 @@
         padding-left: 0; }
     .header-list__link {
       color: #000000;
-      font-family: "ProbaPro-Regular", sans-serif;
+      font-family: "ProbaPro", sans-serif;
+      font-weight: 400;
       font-size: 18px;
       line-height: 30px;
       -webkit-transition: all 0.3s linear;
       -o-transition: all 0.3s linear;
-      transition: all 0.3s linear; } }
+      transition: all 0.3s linear; }
+      .header-list__link:hover {
+        opacity: 0.5; } }
 
 @media screen and (min-width: 1200px) {
   .header__container {
