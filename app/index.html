@@ -28,7 +28,7 @@
 </head>
 
 <body class="body">
-  <header class="header">
+  <header id="header" class="header">
     <div class="header__container">
       <div class="header__logo">
         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
@@ -58,19 +58,19 @@
         <div class="header__menu">
           <ul class="header-list">
             <li class="header-list__item">
-              <a href="#" class="header-list__link">Новости</a>
+              <a href="#news" class="header-list__link">Новости</a>
             </li>
             <li class="header-list__item">
-              <a href="#" class="header-list__link">О студии</a>
+              <a href="#studio" class="header-list__link">О студии</a>
             </li>
             <li class="header-list__item">
-              <a href="#" class="header-list__link">Проекты</a>
+              <a href="#projects" class="header-list__link">Проекты</a>
             </li>
             <li class="header-list__item">
-              <a href="#" class="header-list__link">Вакансии</a>
+              <a href="#vacancies" class="header-list__link">Вакансии</a>
             </li>
             <li class="header-list__item">
-              <a href="#" class="header-list__link">Контакты</a>
+              <a href="#contacts" class="header-list__link">Контакты</a>
             </li>
           </ul>
         </div>
@@ -133,7 +133,7 @@
     </div>
   </header>
 
-  <section class="gallery">
+  <section id="gallery" class="gallery">
     <div class="item">
       <div class="gallery__item" style="background-image: url(img/zebra.png)">
         <a href="#"></a>
@@ -154,7 +154,7 @@
     </div>
   </section>
 
-  <section class="news-section">
+  <section id="news" class="news-section">
     <div class="news">
       <div class="news__container">
         <div class="news__title">Новости</div>
@@ -282,7 +282,7 @@
     <div class="animate-line2" id="line1" data-color="f3762e"></div>
   </section>
 
-  <section class="studio-section">
+  <section id="studio" class="studio-section">
     <div class="studio">
       <div class="studio__container">
         <div class="studio__title">О студии</div>
@@ -301,11 +301,11 @@
     <div class="animate-line2" id="line2" data-color="bdd747"></div>
   </section>
 
-  <section class="projects-section">
+  <section id="projects" class="projects-section">
     <div class="animate-line2" id="line3" data-color="635eaa"></div>
   </section>
 
-  <section class="vacancies-section">
+  <section id="vacancies" class="vacancies-section">
     <div class="vacancies">
       <div class="vacancies__container">
         <div class="vacancies__icon">
@@ -339,12 +339,12 @@
   </section>
 
   <div class="animate-line" id="line4" data-color="635EAA"></div>
-  <section class="map-section">
+  <section id="map-wrapper" class="map-section">
     <div id="map" class="map"></div>
     <div class="animate-line2" id="line8" data-color="00ABCC"></div>
   </section>
 
-  <section class="contacts">
+  <section id="contacts" class="contacts">
     <div class="contacts__container">
       <div class="contacts__title">Контакты</div>
       <div class="contacts__address">
@@ -448,10 +448,11 @@
   <!--<script src="js/studio-video.js"></script>-->
   <script src="js/logo.js"></script>
   <script src="js/animationDivs.js"></script>
+  <script src="js/menu-anchor.js"></script>
   <script src="js/TweenMax.min.js"></script>
   <script src="js/main.js"></script>
 
-  <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
-  <script src="js/map.js"></script>
+  <!--<script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>-->
+  <!--<script src="js/map.js"></script>-->
 </body>
 </html>
