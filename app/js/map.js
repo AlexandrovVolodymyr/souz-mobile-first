@@ -35,4 +35,4 @@ ymaps.ready(function () {
   myMap.behaviors.disable('scrollZoom');
 });
 
-// ymaps.ready(init);
+ymaps.ready(init);
