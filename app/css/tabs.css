@@ -12,35 +12,63 @@
   font-style: normal;
   font-weight: 400; }
 
+@font-face {
+  font-family: "ProbaPro-Regular";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Bold";
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "ProbaPro-Medium";
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500; }
+
 .tabs-container {
   position: relative;
   padding: 0 1rem; }
 
 ul.tabs {
-  margin: 0px;
+  margin-top: 30px;
   padding: 0px;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media screen and (min-width: 851px) {
+    ul.tabs {
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; } }
+  @media screen and (min-width: 992px) {
+    ul.tabs {
+      margin: 0; } }
   ul.tabs li {
     background: none;
     color: #fff;
     display: inline-block;
-    padding: 15px 25px;
+    padding: 5px 10px;
     cursor: pointer;
-    font-family: "ProbaPro", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
+    font-family: "ProbaPro-Bold",sans-serif;
+    font-size: 9px;
     line-height: 20px;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 0.67px;
     -webkit-transition: color 0.3s linear;
     -o-transition: color 0.3s linear;
     transition: color 0.3s linear; }
@@ -50,10 +78,17 @@ ul.tabs {
       border-radius: 25px;
       background-color: #ffffff;
       color: #383838; }
+    @media screen and (min-width: 768px) {
+      ul.tabs li {
+        padding: 15px 25px;
+        font-size: 18px;
+        line-height: 20px; } }
 
 .tab-content {
   display: none;
   padding: 15px; }
+  .tab-content.current {
+    display: inherit; }
 
 .tab-link {
   font-size: 1rem; }

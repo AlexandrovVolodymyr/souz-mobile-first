@@ -13,6 +13,27 @@
   font-weight: 400; }
 
 @font-face {
+  font-family: "ProbaPro-Regular";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Bold";
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "ProbaPro-Medium";
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500; }
+
+@font-face {
   font-family: 'codropsicons';
   font-weight: normal;
   font-style: normal;
@@ -628,6 +649,27 @@ h5 {
   font-style: normal;
   font-weight: 400; }
 
+@font-face {
+  font-family: "ProbaPro-Regular";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Bold";
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "ProbaPro-Medium";
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500; }
+
 .header {
   background-color: #ffffff;
   position: fixed;
@@ -964,6 +1006,27 @@ h5 {
   font-style: normal;
   font-weight: 400; }
 
+@font-face {
+  font-family: "ProbaPro-Regular";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Bold";
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "ProbaPro-Medium";
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500; }
+
 .gallery {
   font-size: 0;
   padding-top: 50px;
@@ -1047,6 +1110,27 @@ h5 {
   font-style: normal;
   font-weight: 400; }
 
+@font-face {
+  font-family: "ProbaPro-Regular";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Bold";
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "ProbaPro-Medium";
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500; }
+
 #news-post {
   padding: 1rem; }
 
@@ -1065,8 +1149,7 @@ h5 {
     width: 80%; }
   .news__title {
     color: #ffffff;
-    font-family: "ProbaPro", sans-serif;
-    font-weight: 700;
+    font-family: "ProbaPro-Bold", sans-serif;
     font-size: 40px;
     line-height: 50px;
     letter-spacing: 0.21px;
@@ -1079,8 +1162,7 @@ h5 {
     display: none;
     color: #ffffff;
     font-size: 18px;
-    font-family: "ProbaPro", sans-serif;
-    font-weight: 500;
+    font-family: "ProbaPro-Medium", sans-serif;
     line-height: 40px;
     text-align: center; }
   .news__image img {
@@ -1110,8 +1192,7 @@ h5 {
   .news__text-normal {
     color: #ffffff;
     display: block;
-    font-family: "ProbaPro", sans-serif;
-    font-weight: 500;
+    font-family: "ProbaPro-Medium", sans-serif;
     line-height: 20px;
     font-size: 18px;
     max-width: 310px;
@@ -1121,8 +1202,7 @@ h5 {
   .news__text-lighten {
     color: #ffffff;
     display: block;
-    font-family: "ProbaPro", sans-serif;
-    font-weight: 400;
+    font-family: "ProbaPro-Regular", sans-serif;
     font-size: 16px;
     line-height: 30px;
     opacity: 0.5; }
@@ -1379,6 +1459,27 @@ h5 {
   font-style: normal;
   font-weight: 400; }
 
+@font-face {
+  font-family: "ProbaPro-Regular";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Bold";
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "ProbaPro-Medium";
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500; }
+
 .studio {
   background-color: #f3762e;
   padding-bottom: 160px; }
@@ -1387,8 +1488,7 @@ h5 {
     padding: 0 1rem; }
   .studio__title {
     color: #ffffff;
-    font-family: "ProbaPro", sans-serif;
-    font-weight: 700;
+    font-family: "ProbaPro-Bold", sans-serif;
     font-size: 40px;
     line-height: 50px;
     letter-spacing: 0.21px;
@@ -1400,8 +1500,7 @@ h5 {
     position: relative; }
   .studio__text {
     color: #ffffff;
-    font-family: "ProbaPro", sans-serif;
-    font-weight: 500;
+    font-family: "ProbaPro-Medium", sans-serif;
     font-size: 18px;
     line-height: 25px;
     margin: auto;
@@ -1410,8 +1509,7 @@ h5 {
     background-color: #ffffff;
     border-radius: 45px;
     color: #383838;
-    font-family: "ProbaPro", sans-serif;
-    font-weight: 700;
+    font-family: "ProbaPro-Bold", sans-serif;
     font-size: 10px;
     line-height: 20px;
     text-transform: uppercase;
@@ -1500,6 +1598,607 @@ h5 {
     max-width: 80%; } }
 
 /*/ STUDIO */
+.studio-about {
+  background-color: #fff;
+  position: fixed;
+  left: -100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  z-index: 6;
+  overflow-x: hidden; }
+  .studio-about-active {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    overflow-y: scroll; }
+  .studio-about__row {
+    position: relative;
+    padding: 1rem; }
+    .studio-about__row:after {
+      content: '';
+      display: table;
+      clear: both; }
+    .studio-about__row-yellow {
+      background-color: #fdb814; }
+    .studio-about__row-coral {
+      background-color: #00abcc; }
+      .studio-about__row-coral-after {
+        content: '';
+        display: table;
+        clear: both; }
+      .studio-about__row-coral .pig {
+        width: 115px;
+        height: 115px;
+        float: right;
+        padding-right: 0;
+        margin-bottom: 14px; }
+        @media screen and (min-width: 768px) {
+          .studio-about__row-coral .pig {
+            width: 260px;
+            height: 260px; } }
+        @media screen and (min-width: 992px) {
+          .studio-about__row-coral .pig {
+            margin-right: 140px; } }
+  .studio-about__close {
+    background: #383838 url("../img/close.svg") no-repeat center;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    float: right; }
+    @media screen and (min-width: 768px) {
+      .studio-about__close {
+        width: 50px;
+        height: 50px; } }
+  .studio-about__title {
+    color: #ffffff;
+    font-family: "ProbaPro-Bold", sans-serif;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.21px;
+    padding: 0 1rem;
+    text-align: center; }
+    @media screen and (min-width: 992px) {
+      .studio-about__title {
+        font-size: 70px;
+        line-height: 50px; } }
+    .studio-about__title-mini {
+      background: #00abcc;
+      color: #ffffff;
+      font-family: "ProbaPro-Bold", sans-serif;
+      font-size: 32px;
+      line-height: 36px;
+      width: 100%;
+      text-align: left; }
+      @media screen and (min-width: 768px) {
+        .studio-about__title-mini {
+          text-align: center; } }
+      @media screen and (min-width: 992px) {
+        .studio-about__title-mini {
+          font-size: 42px;
+          line-height: 48px; } }
+  .studio-about__description {
+    color: #ffffff;
+    font-family: "ProbaPro-Medium", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    max-width: 100%;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center; }
+    @media screen and (min-width: 768px) {
+      .studio-about__description {
+        font-size: 32px;
+        line-height: 48px;
+        max-width: 60%;
+        margin: 60px auto;
+        padding-bottom: 113px; } }
+  .studio-about__images {
+    position: relative; }
+    .studio-about__images .header__logo_link-studio {
+      display: none;
+      border-radius: 50%;
+      width: 120px;
+      height: 117px;
+      background: #00abcc url(../img/logo-text.png) no-repeat center;
+      -webkit-transition: background-color 0.25s linear;
+      -o-transition: background-color 0.25s linear;
+      transition: background-color 0.25s linear;
+      position: absolute;
+      top: 20px;
+      left: 140px; }
+      @media screen and (min-width: 992px) {
+        .studio-about__images .header__logo_link-studio {
+          display: inline-block; } }
+    .studio-about__images .studio-bg-yellow {
+      width: 100%; }
+    .studio-about__images .studio-about-img {
+      left: 50%;
+      bottom: -15px;
+      width: 160px;
+      height: 114px;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%); }
+      @media screen and (min-width: 768px) {
+        .studio-about__images .studio-about-img {
+          width: 360px;
+          height: 257px; } }
+      .studio-about__images .studio-about-img-absolute {
+        position: absolute; }
+  .studio-about__bottom {
+    font-size: 0;
+    clear: both;
+    position: relative;
+    margin-top: 40px; }
+    @media screen and (min-width: 768px) {
+      .studio-about__bottom {
+        margin-top: 130px; } }
+    .studio-about__bottom .studio-bg-coral {
+      width: 100%; }
+    .studio-about__bottom .header__social {
+      display: block; }
+      .studio-about__bottom .header__social img {
+        margin: 0 5px; }
+    .studio-about__bottom_text {
+      color: #ffffff;
+      font-family: "ProbaPro-Regular", sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      max-width: 100%;
+      margin: 0; }
+      @media screen and (min-width: 768px) {
+        .studio-about__bottom_text {
+          max-width: 680px;
+          margin: 40px auto; } }
+      @media screen and (min-width: 992px) {
+        .studio-about__bottom_text {
+          font-size: 20px;
+          line-height: 30px; } }
+  .studio-about__share {
+    color: #383838;
+    font-family: "ProbaPro-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    margin-right: 15px; }
+  .studio-about__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center; }
+    @media screen and (min-width: 768px) {
+      .studio-about__social {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
+  .studio-about__video {
+    background-color: #fff;
+    margin: 40px auto 0;
+    width: 100%;
+    height: 160px;
+    padding: 0 1rem; }
+    @media screen and (min-width: 580px) {
+      .studio-about__video {
+        height: 320px; } }
+    @media screen and (min-width: 768px) {
+      .studio-about__video {
+        height: 500px;
+        margin: 140px auto 0; } }
+    @media screen and (min-width: 992px) {
+      .studio-about__video {
+        background-color: #000;
+        margin: 140px auto 0;
+        width: 1160px;
+        height: 660px; } }
+    .studio-about__video .video__viewport {
+      width: 100%;
+      height: 100%;
+      position: relative; }
+    .studio-about__video .video-poster {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: 1; }
+    .studio-about__video .video-frame {
+      margin: auto;
+      width: 100%;
+      height: 100%; }
+
+/* PROJECTS SECTION */
+/* FONTS */
+@font-face {
+  font-family: "ProbaPro";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal; }
+
+@font-face {
+  font-family: "LucidGrande-Regular";
+  src: url("../fonts/LucidaGrande/LucidaGrande.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Regular";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Bold";
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "ProbaPro-Medium";
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500; }
+
+/* projects */
+.projects {
+  background-color: #bdd747;
+  padding-top: 60px;
+  padding-bottom: 1rem;
+  overflow: hidden;
+  position: relative; }
+  @media screen and (min-width: 768px) {
+    .projects {
+      padding-top: 148px; } }
+  .projects-section {
+    background-color: #635eaa;
+    font-size: 0; }
+  .projects .slick-dots {
+    bottom: 0; }
+  .projects .slick-slide {
+    text-align: center; }
+  .projects__footer {
+    background-color: #bdd747;
+    position: relative;
+    min-height: 115px; }
+    .projects__footer-text {
+      color: #383838;
+      font-family: "ProbaPro-Regular", sans-serif;
+      font-size: 14px;
+      line-height: 20px;
+      position: absolute;
+      top: 1rem;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+          -ms-transform: translate(-50%, 0);
+              transform: translate(-50%, 0);
+      width: 100%;
+      max-width: 350px;
+      text-align: center;
+      opacity: 0.5; }
+      .projects__footer-text-down {
+        top: auto;
+        bottom: 1rem; }
+        .projects__footer-text-down a {
+          color: #383838;
+          font-family: "ProbaPro-Regular", sans-serif;
+          font-size: 14px; }
+    .projects__footer .projects-bg-yellow {
+      width: 100%; }
+  .projects__container {
+    width: 100%;
+    padding: 0 1rem; }
+    @media screen and (min-width: 992px) {
+      .projects__container {
+        max-width: 992px;
+        margin: auto; } }
+    @media screen and (min-width: 1200px) {
+      .projects__container {
+        max-width: 1000px; } }
+    @media screen and (min-width: 1300px) {
+      .projects__container {
+        max-width: 1200px; } }
+  .projects__viewport {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: inherit; }
+  .projects__item {
+    cursor: pointer;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 180px;
+            flex: 0 0 180px;
+    max-width: 180px;
+    margin: auto;
+    position: relative; }
+    .projects__item:hover .projects__description {
+      background-color: #635eaa; }
+    .projects__item:hover .projects__link {
+      color: #fff; }
+    .projects__item:hover .projects__image img {
+      width: 100%;
+      -webkit-transition: all 0.2s linear;
+      -o-transition: all 0.2s linear;
+      transition: all 0.2s linear;
+      -webkit-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+              transform: scale(1.2); }
+    @media screen and (min-width: 768px) {
+      .projects__item {
+        max-width: 320px; } }
+    @media screen and (min-width: 992px) {
+      .projects__item {
+        max-width: 300px;
+        margin: 0; } }
+    @media screen and (min-width: 1300px) {
+      .projects__item {
+        max-width: 320px; } }
+  .projects__image {
+    border-top-left-radius: 21px;
+    border-top-right-radius: 21px;
+    font-size: 0;
+    overflow: hidden; }
+    .projects__image img {
+      width: 100%;
+      -webkit-transition: all 0.2s linear;
+      -o-transition: all 0.2s linear;
+      transition: all 0.2s linear; }
+      @media screen and (min-width: 768px) {
+        .projects__image img {
+          height: 220px; } }
+  .projects__description {
+    background-color: #fff;
+    border-bottom-left-radius: 21px;
+    border-bottom-right-radius: 21px;
+    padding: 10px 1rem 32px;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+    @media screen and (min-width: 768px) {
+      .projects__description {
+        min-height: 220px; } }
+  .projects__link {
+    display: block;
+    color: #383838;
+    font-family: "ProbaPro-Bold", sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    text-align: center; }
+    @media screen and (min-width: 768px) {
+      .projects__link {
+        font-size: 30px;
+        line-height: 34px; } }
+  .projects__text {
+    display: none;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    line-height: 1.2;
+    font-family: "ProbaPro-Regular", sans-serif; }
+    @media screen and (min-width: 768px) {
+      .projects__text {
+        display: block; } }
+  .projects__title {
+    color: #383838;
+    font-family: "ProbaPro-Bold", sans-serif;
+    font-size: 40px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    position: static;
+    text-align: center; }
+    @media screen and (min-width: 768px) {
+      .projects__title {
+        font-size: 72px;
+        line-height: 1;
+        text-align: center; } }
+    @media screen and (min-width: 851px) {
+      .projects__title {
+        position: absolute;
+        top: -21px;
+        left: 1rem;
+        font-size: 72px;
+        line-height: 70px; } }
+  .projects__info {
+    color: #383838;
+    font-family: "ProbaPro-Regular", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 490px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    text-align: center; }
+    @media screen and (min-width: 768px) {
+      .projects__info {
+        font-size: 20px;
+        line-height: 28px;
+        padding: 1rem; } }
+    @media screen and (min-width: 850px) {
+      .projects__info {
+        margin-bottom: 0; } }
+    @media screen and (min-width: 992px) {
+      .projects__info {
+        text-align: left;
+        margin: 30px 0;
+        padding: 0; } }
+  .projects__arrows {
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 60%; }
+    @media screen and (min-width: 769px) {
+      .projects__arrows {
+        top: 50%; } }
+    .projects__arrows-right {
+      position: absolute;
+      right: -20px;
+      -webkit-transition: all 0.15s linear;
+      -o-transition: all 0.15s linear;
+      transition: all 0.15s linear; }
+      @media screen and (min-width: 1200px) {
+        .projects__arrows-right {
+          right: -45px; }
+          .projects__arrows-right:hover {
+            right: -35px; } }
+      .projects__arrows-right img {
+        width: 50px;
+        height: 50px; }
+        @media screen and (min-width: 1200px) {
+          .projects__arrows-right img {
+            width: 90px;
+            height: 90px; } }
+    .projects__arrows-left {
+      position: absolute;
+      left: -20px;
+      -webkit-transition: all 0.15s linear;
+      -o-transition: all 0.15s linear;
+      transition: all 0.15s linear; }
+      @media screen and (min-width: 1200px) {
+        .projects__arrows-left {
+          left: -45px; }
+          .projects__arrows-left:hover {
+            left: -35px; } }
+      .projects__arrows-left img {
+        width: 50px;
+        height: 50px; }
+        @media screen and (min-width: 1200px) {
+          .projects__arrows-left img {
+            width: 90px;
+            height: 90px; } }
+    .projects__arrows-wrap {
+      position: relative;
+      width: 100%; }
+
+/*/ projects */
+/* projects popup */
+.fancybox-slide .projects-popup {
+  width: 100%;
+  height: 100%; }
+  .fancybox-slide .projects-popup-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    @media screen and (min-width: 769px) {
+      .fancybox-slide .projects-popup-wrap {
+        display: block; } }
+  .fancybox-slide .projects-popup-gallery {
+    background: #bdd747 !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    @media screen and (min-width: 1200px) {
+      .fancybox-slide .projects-popup-gallery {
+        padding-left: 140px;
+        padding-right: 140px; } }
+  .fancybox-slide .projects-popup__left {
+    width: 100%; }
+    @media screen and (min-width: 769px) {
+      .fancybox-slide .projects-popup__left {
+        float: left;
+        width: 40%; } }
+  .fancybox-slide .projects-popup__right {
+    padding-top: 50px;
+    width: 100%;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1; }
+    @media screen and (min-width: 769px) {
+      .fancybox-slide .projects-popup__right {
+        float: left;
+        width: 60%;
+        -webkit-box-ordinal-group: unset;
+            -ms-flex-order: unset;
+                order: unset;
+        padding: 0 1rem; } }
+  .fancybox-slide .projects-popup__border-img {
+    padding-top: 1rem;
+    text-align: center; }
+    .fancybox-slide .projects-popup__border-img img {
+      width: 219px;
+      height: 280px; }
+      @media screen and (min-width: 580px) {
+        .fancybox-slide .projects-popup__border-img img {
+          width: 402px;
+          height: 515px; } }
+  .fancybox-slide .projects-popup__title {
+    color: #383838;
+    font-family: "ProbaPro-Bold", sans-serif;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: left !important;
+    padding-top: 1rem;
+    max-width: 100%; }
+    @media screen and (min-width: 580px) {
+      .fancybox-slide .projects-popup__title {
+        padding-top: 100px; } }
+  .fancybox-slide .projects-popup__release {
+    color: #ffffff;
+    font-family: "ProbaPro-Regular", sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 20px;
+    margin-bottom: 40px; }
+  .fancybox-slide .projects-popup__writer {
+    color: rgba(0, 0, 0, 0.3);
+    font-family: "ProbaPro-Regular", sans-serif;
+    font-size: 18px;
+    line-height: 26px; }
+  .fancybox-slide .projects-popup__text {
+    color: black;
+    font-family: "ProbaPro-Regular", sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 21px;
+    max-width: 545px; }
+  .fancybox-slide .projects-popup .header__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-top: 1rem; }
+    .fancybox-slide .projects-popup .header__social img {
+      margin: 0 5px; }
+
+/*/ projects popup */
 /* VACANCIES */
 /* FONTS */
 @font-face {
@@ -1513,6 +2212,27 @@ h5 {
   src: url("../fonts/LucidaGrande/LucidaGrande.ttf") format("ttf");
   font-style: normal;
   font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Regular";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Bold";
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "ProbaPro-Medium";
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500; }
 
 .vacancies {
   background: #635eaa; }
@@ -1535,8 +2255,7 @@ h5 {
       height: 100%; }
   .vacancies__title {
     color: #ffffff;
-    font-family: "ProbaPro", sans-serif;
-    font-weight: 700;
+    font-family: "ProbaPro-Bold", sans-serif;
     font-size: 40px;
     line-height: 30px;
     padding-bottom: 35px;
@@ -1552,8 +2271,7 @@ h5 {
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
     color: #ffffff;
     display: block;
-    font-family: "ProbaPro", sans-serif;
-    font-weight: 500;
+    font-family: "ProbaPro-Medium", sans-serif;
     font-size: 18px;
     padding: 12.5px 0;
     text-align: center;
@@ -1575,8 +2293,7 @@ h5 {
     .vacancies__footer-link {
       color: #ffffff;
       display: inline-block;
-      font-family: "ProbaPro", sans-serif;
-      font-weight: 400;
+      font-family: "ProbaPro-Regular", sans-serif;
       font-size: 16px;
       line-height: 22px;
       margin-top: 10px;
@@ -1584,8 +2301,7 @@ h5 {
       text-decoration: underline; }
     .vacancies__footer-text {
       color: #ffffff;
-      font-family: "ProbaPro", sans-serif;
-      font-weight: 400;
+      font-family: "ProbaPro-Regular", sans-serif;
       font-size: 16px;
       line-height: 22px; }
 
@@ -1612,6 +2328,81 @@ h5 {
     padding-bottom: 60px; } }
 
 /*/ VACANCIES */
+/*vacancies-post*/
+#vacancies-post {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: none; }
+
+.vacancies-post {
+  background-color: #635eaa;
+  color: #ffffff;
+  padding: 70px 1rem;
+  max-width: 100%; }
+  .vacancies-post .vacancies__footer-link {
+    margin-bottom: 0; }
+  .vacancies-post__container {
+    max-width: 100%; }
+    @media screen and (min-width: 768px) {
+      .vacancies-post__container {
+        max-width: 760px;
+        margin: auto; } }
+  .vacancies-post__title {
+    font-family: "ProbaPro-Bold", sans-serif;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: left; }
+    @media screen and (min-width: 768px) {
+      .vacancies-post__title {
+        font-size: 42px;
+        line-height: 54px;
+        text-align: center; } }
+  .vacancies-post__budget {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "ProbaPro-Bold", sans-serif;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: left;
+    padding-bottom: 25px; }
+    @media screen and (min-width: 768px) {
+      .vacancies-post__budget {
+        font-size: 42px;
+        line-height: 54px;
+        text-align: center; } }
+  .vacancies-post__exp {
+    font-family: "ProbaPro-Medium", sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: left; }
+    @media screen and (min-width: 768px) {
+      .vacancies-post__exp {
+        font-size: 24px;
+        line-height: 38px;
+        text-align: center; } }
+  .vacancies-post__row {
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    padding-top: 1rem;
+    margin-top: 1rem; }
+  .vacancies-post__text-opacity {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "ProbaPro-Regular", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 1rem; }
+  .vacancies-post__text li span {
+    font-family: "ProbaPro-Regular", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-left: 1rem; }
+    @media screen and (min-width: 768px) {
+      .vacancies-post__text li span {
+        font-size: 20px;
+        line-height: 28px; } }
+
+/*/vacancies-post*/
 /* CONTACTS */
 /* FONTS */
 @font-face {
@@ -1625,6 +2416,27 @@ h5 {
   src: url("../fonts/LucidaGrande/LucidaGrande.ttf") format("ttf");
   font-style: normal;
   font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Regular";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Bold";
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "ProbaPro-Medium";
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500; }
 
 .contacts-white-bg {
   width: 100%;
@@ -1779,35 +2591,63 @@ h5 {
   font-style: normal;
   font-weight: 400; }
 
+@font-face {
+  font-family: "ProbaPro-Regular";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Bold";
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "ProbaPro-Medium";
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500; }
+
 .tabs-container {
   position: relative;
   padding: 0 1rem; }
 
 ul.tabs {
-  margin: 0px;
+  margin-top: 30px;
   padding: 0px;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media screen and (min-width: 851px) {
+    ul.tabs {
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; } }
+  @media screen and (min-width: 992px) {
+    ul.tabs {
+      margin: 0; } }
   ul.tabs li {
     background: none;
     color: #fff;
     display: inline-block;
-    padding: 15px 25px;
+    padding: 5px 10px;
     cursor: pointer;
-    font-family: "ProbaPro", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
+    font-family: "ProbaPro-Bold",sans-serif;
+    font-size: 9px;
     line-height: 20px;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 0.67px;
     -webkit-transition: color 0.3s linear;
     -o-transition: color 0.3s linear;
     transition: color 0.3s linear; }
@@ -1817,10 +2657,17 @@ ul.tabs {
       border-radius: 25px;
       background-color: #ffffff;
       color: #383838; }
+    @media screen and (min-width: 768px) {
+      ul.tabs li {
+        padding: 15px 25px;
+        font-size: 18px;
+        line-height: 20px; } }
 
 .tab-content {
   display: none;
   padding: 15px; }
+  .tab-content.current {
+    display: inherit; }
 
 .tab-link {
   font-size: 1rem; }
@@ -1841,6 +2688,27 @@ ul.tabs {
   font-style: normal;
   font-weight: 400; }
 
+@font-face {
+  font-family: "ProbaPro-Regular";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Bold";
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "ProbaPro-Medium";
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500; }
+
 .fancybox-close-small {
   width: 50px !important;
   height: 50px !important;
@@ -1857,22 +2725,28 @@ ul.tabs {
   background-color: #fff !important;
   color: #000 !important;
   opacity: 1 !important;
-  top: 45px !important;
+  top: 1.4rem !important;
   width: 50px !important;
   height: 50px !important; }
 
 .fancybox-button--arrow_left {
-  left: 140px !important; }
+  left: 1rem !important; }
+  @media screen and (min-width: 1200px) {
+    .fancybox-button--arrow_left {
+      left: 140px !important; } }
 
 .fancybox-button--arrow_right {
   right: auto !important;
-  left: 200px !important; }
+  left: calc(1rem + 60px) !important; }
+  @media screen and (min-width: 1200px) {
+    .fancybox-button--arrow_right {
+      left: calc(140px + 60px) !important; } }
 
 .fancybox-infobar {
   color: #fff !important;
   mix-blend-mode: unset !important;
-  left: 260px !important;
-  top: 50px !important; }
+  left: 130px !important;
+  top: 1.4rem !important; }
   .fancybox-infobar span {
     color: #fff;
     font-size: 24px;
@@ -1896,6 +2770,27 @@ ul.tabs {
   src: url("../fonts/LucidaGrande/LucidaGrande.ttf") format("ttf");
   font-style: normal;
   font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Regular";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Bold";
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "ProbaPro-Medium";
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500; }
 
 .map {
   width: 100%;

@@ -12,6 +12,27 @@
   font-style: normal;
   font-weight: 400; }
 
+@font-face {
+  font-family: "ProbaPro-Regular";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Bold";
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "ProbaPro-Medium";
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500; }
+
 .fancybox-close-small {
   width: 50px !important;
   height: 50px !important;
@@ -28,22 +49,28 @@
   background-color: #fff !important;
   color: #000 !important;
   opacity: 1 !important;
-  top: 45px !important;
+  top: 1.4rem !important;
   width: 50px !important;
   height: 50px !important; }
 
 .fancybox-button--arrow_left {
-  left: 140px !important; }
+  left: 1rem !important; }
+  @media screen and (min-width: 1200px) {
+    .fancybox-button--arrow_left {
+      left: 140px !important; } }
 
 .fancybox-button--arrow_right {
   right: auto !important;
-  left: 200px !important; }
+  left: calc(1rem + 60px) !important; }
+  @media screen and (min-width: 1200px) {
+    .fancybox-button--arrow_right {
+      left: calc(140px + 60px) !important; } }
 
 .fancybox-infobar {
   color: #fff !important;
   mix-blend-mode: unset !important;
-  left: 260px !important;
-  top: 50px !important; }
+  left: 130px !important;
+  top: 1.4rem !important; }
   .fancybox-infobar span {
     color: #fff;
     font-size: 24px;

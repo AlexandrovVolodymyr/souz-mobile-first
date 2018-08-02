@@ -12,6 +12,27 @@
   font-style: normal;
   font-weight: 400; }
 
+@font-face {
+  font-family: "ProbaPro-Regular";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Bold";
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "ProbaPro-Medium";
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500; }
+
 .vacancies {
   background: #635eaa; }
   .vacancies-section {
@@ -33,8 +54,7 @@
       height: 100%; }
   .vacancies__title {
     color: #ffffff;
-    font-family: "ProbaPro", sans-serif;
-    font-weight: 700;
+    font-family: "ProbaPro-Bold", sans-serif;
     font-size: 40px;
     line-height: 30px;
     padding-bottom: 35px;
@@ -50,8 +70,7 @@
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
     color: #ffffff;
     display: block;
-    font-family: "ProbaPro", sans-serif;
-    font-weight: 500;
+    font-family: "ProbaPro-Medium", sans-serif;
     font-size: 18px;
     padding: 12.5px 0;
     text-align: center;
@@ -73,8 +92,7 @@
     .vacancies__footer-link {
       color: #ffffff;
       display: inline-block;
-      font-family: "ProbaPro", sans-serif;
-      font-weight: 400;
+      font-family: "ProbaPro-Regular", sans-serif;
       font-size: 16px;
       line-height: 22px;
       margin-top: 10px;
@@ -82,8 +100,7 @@
       text-decoration: underline; }
     .vacancies__footer-text {
       color: #ffffff;
-      font-family: "ProbaPro", sans-serif;
-      font-weight: 400;
+      font-family: "ProbaPro-Regular", sans-serif;
       font-size: 16px;
       line-height: 22px; }
 
@@ -110,3 +127,78 @@
     padding-bottom: 60px; } }
 
 /*/ VACANCIES */
+/*vacancies-post*/
+#vacancies-post {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: none; }
+
+.vacancies-post {
+  background-color: #635eaa;
+  color: #ffffff;
+  padding: 70px 1rem;
+  max-width: 100%; }
+  .vacancies-post .vacancies__footer-link {
+    margin-bottom: 0; }
+  .vacancies-post__container {
+    max-width: 100%; }
+    @media screen and (min-width: 768px) {
+      .vacancies-post__container {
+        max-width: 760px;
+        margin: auto; } }
+  .vacancies-post__title {
+    font-family: "ProbaPro-Bold", sans-serif;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: left; }
+    @media screen and (min-width: 768px) {
+      .vacancies-post__title {
+        font-size: 42px;
+        line-height: 54px;
+        text-align: center; } }
+  .vacancies-post__budget {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "ProbaPro-Bold", sans-serif;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: left;
+    padding-bottom: 25px; }
+    @media screen and (min-width: 768px) {
+      .vacancies-post__budget {
+        font-size: 42px;
+        line-height: 54px;
+        text-align: center; } }
+  .vacancies-post__exp {
+    font-family: "ProbaPro-Medium", sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: left; }
+    @media screen and (min-width: 768px) {
+      .vacancies-post__exp {
+        font-size: 24px;
+        line-height: 38px;
+        text-align: center; } }
+  .vacancies-post__row {
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    padding-top: 1rem;
+    margin-top: 1rem; }
+  .vacancies-post__text-opacity {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "ProbaPro-Regular", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 1rem; }
+  .vacancies-post__text li span {
+    font-family: "ProbaPro-Regular", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-left: 1rem; }
+    @media screen and (min-width: 768px) {
+      .vacancies-post__text li span {
+        font-size: 20px;
+        line-height: 28px; } }
+
+/*/vacancies-post*/

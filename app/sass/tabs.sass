@@ -9,24 +9,27 @@
   padding: 0 1rem
 
 ul.tabs
-  margin: 0px
+  margin-top: 30px
   padding: 0px
   list-style: none
   display: flex
-  justify-content: flex-end
+  justify-content: center
   align-items: center
+  @media screen and (min-width: 851px)
+    justify-content: flex-end
+  @media screen and (min-width: 992px)
+    margin: 0
   li
     background: none
     color: #fff
     display: inline-block
-    padding: 15px 25px
+    padding: 5px 10px
     cursor: pointer
-    font-family: $proba-font
-    font-weight: 700
-    font-size: 18px
+    font-family: "ProbaPro-Bold",sans-serif
+    font-size: 9px
     line-height: 20px
     text-transform: uppercase
-    letter-spacing: 1.5px
+    letter-spacing: 0.67px
     transition: color 0.3s linear
     &:hover
       color: #383838
@@ -34,10 +37,16 @@ ul.tabs
       border-radius: 25px
       background-color: #ffffff
       color: #383838
+    @media screen and (min-width: 768px)
+      padding: 15px 25px
+      font-size: 18px
+      line-height: 20px
 
 .tab-content
   display: none
   padding: 15px
+  &.current
+    display: inherit
 
 .tab-link
   font-size: 1rem
