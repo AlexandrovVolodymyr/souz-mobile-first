@@ -29,8 +29,8 @@ function initBt() {
     let y = (bt.offsetTop - bt.offsetHeight / 2) * 0.1;
 
     TweenLite.to(blob[1], 4.2, { x: x, y: y, ease: Elastic.easeOut.config(1, 0.1) });
-    TweenLite.to(blob[2], 1, { x: x, y: -y, ease: Elastic.easeOut.config(1, 0.1) });
-    TweenLite.to(blob[3], 1, { x: -x, y: -y, ease: Elastic.easeOut.config(1, 0.1) });
+    TweenLite.to(blob[2], 2.8, { x: x, y: -y, ease: Elastic.easeOut.config(1, 0.1) });
+    TweenLite.to(blob[3], 2.8, { x: -x, y: -y, ease: Elastic.easeOut.config(1, 0.1) });
     TweenLite.to(filter, 5, { onUpdate: function() { filter.setAttribute('x', 0); }});
   });
 
