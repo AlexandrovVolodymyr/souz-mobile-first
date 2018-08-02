@@ -1270,7 +1270,9 @@ h5 {
     font-size: 24px;
     font-family: "ProbaPro", sans-serif;
     font-weight: 500;
-    line-height: 40px; } }
+    line-height: 40px; }
+  .news__text-lighten {
+    margin-top: 30px; } }
 
 @media screen and (min-width: 1300px) {
   .news__container {
@@ -2747,6 +2749,9 @@ ul.tabs {
   mix-blend-mode: unset !important;
   left: 130px !important;
   top: 1.4rem !important; }
+  @media screen and (min-width: 1200px) {
+    .fancybox-infobar {
+      left: 260px !important; } }
   .fancybox-infobar span {
     color: #fff;
     font-size: 24px;

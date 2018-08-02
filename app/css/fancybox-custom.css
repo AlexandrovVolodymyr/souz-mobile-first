@@ -71,6 +71,9 @@
   mix-blend-mode: unset !important;
   left: 130px !important;
   top: 1.4rem !important; }
+  @media screen and (min-width: 1200px) {
+    .fancybox-infobar {
+      left: 260px !important; } }
   .fancybox-infobar span {
     color: #fff;
     font-size: 24px;
