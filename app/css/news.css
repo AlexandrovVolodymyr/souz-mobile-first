@@ -241,6 +241,9 @@
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
+    @media screen and (min-width: 1200px) {
+      .news-post__content {
+        margin-top: 80px; } }
   .news-post__image {
     text-align: left;
     -webkit-box-flex: 0;

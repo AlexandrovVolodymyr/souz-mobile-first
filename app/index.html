@@ -27,8 +27,8 @@
 	
 </head>
 
-<body class="body">
-  <header id="header" class="header">
+<body class="body" id="body">
+  <header class="header">
     <div class="header__container">
       <div class="header__logo">
         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
@@ -39,8 +39,8 @@
             </filter>
           </defs>
         </svg>
-        <button id="component-4" class=" header__logo_link button button--4">
-          <span class="header__logo_img"></span>
+        <button id="component-4" class="header__logo_link button button--4">
+          <a href="#body" class="header__logo_img"></a>
           <span class="button__bg" style="filter: url('#filter-goo-4')">
             <span class="blob"></span>
             <span class="blob" style="transform: matrix(1, 0, 0, 1, -21, 0.6);"></span>
@@ -607,7 +607,7 @@
                 <li>• <span>Умение работать в команде и нести в себе функционал одного из руководителей проекта.</span></li>
               </ul>
             </div>
-            <div class="vacancies-post__row">
+            <div class="vacancies-post__row vacancies-post__row--last">
               <ul class="vacancies-post__text">
                 <li class="vacancies-post__text-opacity">Обязанности:</li>
                 <li>• <span>Опыт работы в анимационных 2D проектах (от 1 года);</span></li>
@@ -642,7 +642,11 @@
 
   <section id="contacts" class="contacts">
     <div class="contacts__container">
-      <div class="contacts__title">Контакты</div>
+      <div class="contacts__title">Контакты
+        <div class="pechkin">
+          <img src="img/pechka.png" alt="Почтальон Печкин принес журнал">
+        </div>
+      </div>
       <div class="contacts__address">
         ФГУП «Киностудия «Союзмультфильм», 127427,
       </div>

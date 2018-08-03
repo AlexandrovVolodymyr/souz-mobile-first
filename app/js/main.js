@@ -12,7 +12,7 @@ if (isSafari) {
 // Remove click on button for demo purpose
 Array.prototype.slice.call(document.querySelectorAll('.button'), 0).forEach(function(bt) {
   bt.addEventListener('click', function(e) {
-    e.preventDefault();
+    // e.preventDefault();
   });
 });
 

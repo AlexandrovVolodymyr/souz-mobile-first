@@ -71,7 +71,7 @@
       margin: auto
     &-icons
       &-bird
-        left: -50px
+        left: 0
 
 @media screen and (min-width: 768px)
   .studio
@@ -226,6 +226,13 @@
       left: 140px
       @media screen and (min-width: 992px)
         display: inline-block
+      @media screen and (min-width: 1200px)
+        -webkit-background-size: 70%
+        background-size: 70%
+        width: 200px
+        height: 196px
+        left: 22.5%
+        top: 37.5%
     .studio-bg-yellow
       width: 100%
     .studio-about-img
@@ -237,6 +244,8 @@
       @media screen and (min-width: 768px)
         width: 360px
         height: 257px
+      @media screen and (min-width: 1200px)
+        bottom: -35px
       &-absolute
         position: absolute
   &__bottom

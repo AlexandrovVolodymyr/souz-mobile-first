@@ -40,8 +40,7 @@
 .contacts {
   background-color: #00abcc;
   font-size: 0;
-  position: relative;
-  overflow: hidden; }
+  position: relative; }
   .contacts__container {
     padding: 0 1rem; }
   .contacts__title {
@@ -51,7 +50,17 @@
     font-family: "ProbaPro-Bold", sans-serif;
     padding-top: 35px;
     text-align: center;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    position: relative; }
+    .contacts__title .pechkin {
+      display: none;
+      position: absolute;
+      right: -200px;
+      top: -280px;
+      z-index: 3; }
+      @media screen and (min-width: 1200px) {
+        .contacts__title .pechkin {
+          display: block; } }
   .contacts__address {
     color: #fff;
     display: block;
@@ -114,7 +123,10 @@
   .contacts__footer {
     background-color: #fff;
     position: relative;
-    min-height: 160px; }
+    min-height: 200px; }
+    @media screen and (min-width: 769px) {
+      .contacts__footer {
+        min-height: 160px; } }
     .contacts__footer-info {
       position: absolute;
       top: 0;

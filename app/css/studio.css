@@ -106,7 +106,7 @@
     max-width: 70%;
     margin: auto; }
   .studio-icons-bird {
-    left: -50px; } }
+    left: 0; } }
 
 @media screen and (min-width: 768px) {
   .studio {
@@ -272,6 +272,13 @@
       @media screen and (min-width: 992px) {
         .studio-about__images .header__logo_link-studio {
           display: inline-block; } }
+      @media screen and (min-width: 1200px) {
+        .studio-about__images .header__logo_link-studio {
+          background-size: 70%;
+          width: 200px;
+          height: 196px;
+          left: 22.5%;
+          top: 37.5%; } }
     .studio-about__images .studio-bg-yellow {
       width: 100%; }
     .studio-about__images .studio-about-img {
@@ -286,6 +293,9 @@
         .studio-about__images .studio-about-img {
           width: 360px;
           height: 257px; } }
+      @media screen and (min-width: 1200px) {
+        .studio-about__images .studio-about-img {
+          bottom: -35px; } }
       .studio-about__images .studio-about-img-absolute {
         position: absolute; }
   .studio-about__bottom {

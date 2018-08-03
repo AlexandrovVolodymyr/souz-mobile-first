@@ -42,7 +42,7 @@
     position: relative; }
   .vacancies__icon {
     position: absolute;
-    bottom: -80px;
+    bottom: -120px;
     left: 1rem;
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -87,8 +87,11 @@
     max-width: 100%; }
   .vacancies__footer {
     padding-top: 25px;
-    padding-bottom: 50px;
+    padding-bottom: 0;
     text-align: center; }
+    @media screen and (min-width: 1200px) {
+      .vacancies__footer {
+        padding-top: 50px; } }
     .vacancies__footer-link {
       color: #ffffff;
       display: inline-block;
@@ -97,12 +100,17 @@
       line-height: 22px;
       margin-top: 10px;
       margin-bottom: 60px;
-      text-decoration: underline; }
+      text-decoration: underline;
+      opacity: 0.5; }
     .vacancies__footer-text {
       color: #ffffff;
       font-family: "ProbaPro-Regular", sans-serif;
       font-size: 16px;
-      line-height: 22px; }
+      line-height: 22px;
+      opacity: 0.5; }
+      @media screen and (min-width: 992px) {
+        .vacancies__footer-text {
+          opacity: 1; } }
 
 @media screen and (min-width: 768px) {
   .vacancies__list {
@@ -120,6 +128,10 @@
     width: 200px; } }
 
 @media screen and (min-width: 1200px) {
+  .vacancies__footer {
+    padding-bottom: 0; }
+    .vacancies__footer-link {
+      margin-bottom: 0; }
   .vacancies__title {
     font-size: 72px;
     line-height: 50px;
@@ -183,6 +195,15 @@
     border-top: 2px solid rgba(255, 255, 255, 0.5);
     padding-top: 1rem;
     margin-top: 1rem; }
+    .vacancies-post__row--last {
+      border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+      padding-bottom: 1rem; }
+      @media screen and (min-width: 1200px) {
+        .vacancies-post__row--last {
+          padding-bottom: 40px; } }
+    @media screen and (min-width: 1200px) {
+      .vacancies-post__row {
+        margin-top: 40px; } }
   .vacancies-post__text-opacity {
     color: rgba(255, 255, 255, 0.5);
     font-family: "ProbaPro-Regular", sans-serif;

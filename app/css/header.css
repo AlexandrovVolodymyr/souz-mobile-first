@@ -120,6 +120,8 @@
     .header__social-mobile {
       margin-top: 25px;
       text-align: center; }
+      .header__social-mobile img {
+        margin: 0 5px; }
   .header__language {
     justify-self: flex-end;
     margin-left: auto;
