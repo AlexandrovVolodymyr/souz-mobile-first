@@ -40,7 +40,14 @@
 .contacts {
   background-color: #00abcc;
   font-size: 0;
-  position: relative; }
+  position: relative;
+  padding-top: 60px; }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .contacts {
+      overflow: hidden; } }
+  @supports (-ms-ime-align: auto) {
+    .contacts {
+      overflow: hidden; } }
   .contacts__container {
     padding: 0 1rem; }
   .contacts__title {
@@ -48,7 +55,6 @@
     font-size: 40px;
     line-height: 30px;
     font-family: "ProbaPro-Bold", sans-serif;
-    padding-top: 35px;
     text-align: center;
     margin-bottom: 40px;
     position: relative; }
@@ -61,6 +67,16 @@
       @media screen and (min-width: 1200px) {
         .contacts__title .pechkin {
           display: block; } }
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        .contacts__title .pechkin {
+          display: none; } }
+    @media screen and (min-width: 768px) {
+      .contacts__title {
+        padding-top: 60px;
+        font-size: 72px;
+        line-height: 50px;
+        text-align: center;
+        margin-bottom: 40px; } }
   .contacts__address {
     color: #fff;
     display: block;
@@ -123,7 +139,7 @@
   .contacts__footer {
     background-color: #fff;
     position: relative;
-    min-height: 200px; }
+    min-height: 250px; }
     @media screen and (min-width: 769px) {
       .contacts__footer {
         min-height: 160px; } }
@@ -151,36 +167,36 @@
       font-size: 16px;
       line-height: 20px;
       text-align: center;
-      padding: 0.25rem 0; }
+      padding: 0.25rem 0;
+      overflow: hidden;
+      max-height: 48px; }
 
 @media screen and (min-width: 769px) {
-  .contacts {
-    padding-top: 120px; }
-    .contacts__container {
-      max-width: 760px;
-      margin: auto; }
-    .contacts__title {
-      font-family: "ProbaPro-Bold", sans-serif;
-      font-size: 72px;
-      line-height: 50px;
-      text-align: center;
-      margin-bottom: 40px; }
-    .contacts__address, .contacts__telephone, .contacts__link {
-      font-size: 24px; }
-    .contacts__footer-title {
-      font-size: 20px; }
-    .contacts__footer-info {
-      top: -50%; }
-    .contacts__description, .contacts__cat {
-      -webkit-box-flex: 0;
-          -ms-flex: 0 0 50%;
-              flex: 0 0 50%;
-      max-width: 50%;
-      padding: 1rem 0;
-      font-size: 20px; }
-    .contacts__telephone-small, .contacts__link-small {
-      font-size: 20px;
-      line-height: 28px;
-      text-align: left; } }
+  .contacts__container {
+    max-width: 760px;
+    margin: auto; }
+  .contacts__title {
+    font-family: "ProbaPro-Bold", sans-serif;
+    font-size: 72px;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 40px; }
+  .contacts__address, .contacts__telephone, .contacts__link {
+    font-size: 24px; }
+  .contacts__footer-title {
+    font-size: 20px; }
+  .contacts__footer-info {
+    top: -50%; }
+  .contacts__description, .contacts__cat {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+    padding: 1rem 0;
+    font-size: 20px; }
+  .contacts__telephone-small, .contacts__link-small {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left; } }
 
 /*/ CONTACTS */

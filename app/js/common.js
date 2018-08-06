@@ -150,7 +150,9 @@
 
   //fancy box loop images
   $('[data-fancybox]').fancybox({
-      loop: true
+      loop: true,
+      'scrolling': 'no',
+      'iframe': {'scrolling': 'no'}
   });
 
 })();

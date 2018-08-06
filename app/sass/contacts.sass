@@ -11,7 +11,12 @@
   background-color: #00abcc
   font-size: 0
   position: relative
+  padding-top: 60px
   //overflow: hidden
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+    overflow: hidden
+  @supports (-ms-ime-align: auto)
+    overflow: hidden
   &__container
     padding: 0 1rem
   &__title
@@ -19,7 +24,7 @@
     font-size: 40px
     line-height: 30px
     font-family: "ProbaPro-Bold", sans-serif
-    padding-top: 35px
+    //padding-top: 35px
     text-align: center
     margin-bottom: 40px
     position: relative
@@ -31,6 +36,14 @@
       z-index: 3
       @media screen and (min-width: 1200px)
         display: block
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+        display: none
+    @media screen and (min-width: 768px)
+      padding-top: 60px
+      font-size: 72px
+      line-height: 50px
+      text-align: center
+      margin-bottom: 40px
   &__address
     color: #fff
     display: block
@@ -87,7 +100,7 @@
   &__footer
     background-color: #fff
     position: relative
-    min-height: 200px
+    min-height: 250px
     @media screen and (min-width: 769px)
       min-height: 160px
     &-info
@@ -113,10 +126,11 @@
       line-height: 20px
       text-align: center
       padding: 0.25rem 0
+      overflow: hidden
+      max-height: 48px
 
 @media screen and (min-width: 769px)
   .contacts
-    padding-top: 120px
     &__container
       max-width: 760px
       margin: auto

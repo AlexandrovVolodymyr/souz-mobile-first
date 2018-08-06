@@ -34,7 +34,11 @@
   font-weight: 500; }
 
 .vacancies {
-  background: #635eaa; }
+  background: #635eaa;
+  padding-top: 60px; }
+  @media screen and (min-width: 768px) {
+    .vacancies {
+      padding-top: 100px; } }
   .vacancies-section {
     font-size: 0; }
   .vacancies__container {
@@ -58,8 +62,16 @@
     font-size: 40px;
     line-height: 30px;
     padding-bottom: 35px;
-    padding-top: 35px;
     text-align: center; }
+    @media screen and (min-width: 768px) {
+      .vacancies__title {
+        font-size: 72px;
+        line-height: 50px;
+        text-align: center;
+        margin-bottom: 40px; } }
+    @media screen and (min-width: 1200px) {
+      .vacancies__title {
+        padding-top: 0; } }
   .vacancies__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -107,7 +119,9 @@
       font-family: "ProbaPro-Regular", sans-serif;
       font-size: 16px;
       line-height: 22px;
-      opacity: 0.5; }
+      opacity: 0.5;
+      overflow: hidden;
+      max-height: 22px; }
       @media screen and (min-width: 992px) {
         .vacancies__footer-text {
           opacity: 1; } }
@@ -135,7 +149,6 @@
   .vacancies__title {
     font-size: 72px;
     line-height: 50px;
-    padding-top: 120px;
     padding-bottom: 60px; } }
 
 /*/ VACANCIES */

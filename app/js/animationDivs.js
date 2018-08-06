@@ -56,7 +56,6 @@
   $(".animate-line").each(function(){
     var id=$(this).attr('id');
     var color=$(this).data('color');
-
     var paper = Raphael(id, w, h_max);
     paper.setViewBox(0, 0, w, h_max );
     var h1 = h_max;

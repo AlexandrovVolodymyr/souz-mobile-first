@@ -22,6 +22,14 @@
       document.body.classList.add('body-locked');
     }
   });
+
+  $('.header-list-mobile__link').click(function () {
+    header.classList.remove('header-active');
+    header.querySelector('.header__logo').classList.remove('header__logo-active');
+    mobilePart.classList.remove('mobile__part-active');
+    burger.classList.remove('burger-active');
+    document.body.classList.remove('body-locked');
+  });
 // navigation
 
 })();

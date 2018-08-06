@@ -4,6 +4,8 @@
 @import 'mixins'
 @import 'fonts'
 
+.fancybox-slide--html .fancybox-content
+  margin: 0 !important
 .fancybox-close-small
   width: 50px !important
   height: 50px !important
@@ -12,6 +14,9 @@
   color: #fff !important
   top: 1rem !important
   right: 1rem !important
+  transition: all 1s ease-in-out
+  &:hover
+    filter: drop-shadow(0px 0px 2.5px #000)
   svg
     opacity: 1 !important
 .fancybox-slide--html
@@ -28,11 +33,17 @@
   height: 50px !important
 .fancybox-button--arrow_left
   left: 1rem !important
+  transition: all 0.5s ease-in-out !important
+  &:hover
+    filter: drop-shadow(0px 0px 2.5px #fff)
   @media screen and (min-width: 1200px)
     left: 140px !important
 .fancybox-button--arrow_right
   right: auto !important
   left: calc(1rem + 60px) !important
+  transition: all 0.5s ease-in-out !important
+  &:hover
+    filter: drop-shadow(0px 0px 2.5px #fff)
   @media screen and (min-width: 1200px)
     left: calc(140px + 60px) !important
 .fancybox-infobar

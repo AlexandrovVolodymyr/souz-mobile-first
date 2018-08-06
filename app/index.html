@@ -100,24 +100,30 @@
       <div class="header__menu-mobile">
         <ul class="header-list-mobile">
           <li class="header-list-mobile__item">
-            <a href="#" class="header-list-mobile__link">Новости</a>
+            <a href="#news" class="header-list-mobile__link">Новости</a>
           </li>
           <li class="header-list-mobile__item">
-            <a href="#" class="header-list-mobile__link">О студии</a>
+            <a href="#studio" class="header-list-mobile__link">О студии</a>
           </li>
           <li class="header-list-mobile__item">
-            <a href="#" class="header-list-mobile__link">Проекты</a>
+            <a href="#projects" class="header-list-mobile__link">Проекты</a>
           </li>
           <li class="header-list-mobile__item">
-            <a href="#" class="header-list-mobile__link">Вакансии</a>
+            <a href="#vacancies" class="header-list-mobile__link">Вакансии</a>
           </li>
           <li class="header-list-mobile__item">
-            <a href="#" class="header-list-mobile__link">Контакты</a>
+            <a href="#contacts" class="header-list-mobile__link">Контакты</a>
           </li>
         </ul>
       </div>
       <div class="header__child-center-mobile">
         <a href="#" class="header__child-center_link">Детский центр</a>
+      </div>
+      <div class="header__language-mobile">
+        <select name="language" id="language2">
+          <option value="0">Eng</option>
+          <option value="1">Ru</option>
+        </select>
       </div>
       <div class="header__social-mobile">
         <a href="#" class="header__social-link">
@@ -236,7 +242,7 @@
                   <img src="img/facebook.svg" alt="facebook">
                 </a>
                 <a href="#" class="header__social-link">
-                  <img src="img/instagram.svg" alt="instagram">
+                  <img src="img/twitter.png" alt="twitter">
                 </a>
               </div>
               <div class="news-post__content">
@@ -270,6 +276,9 @@
                     Из приведенных текстуальных фрагментов <span class="news-post__text-orange">видно</span>, как олицетворение приводит композиционный анализ. Модальность высказывания недоступно аллитерирует экзистенциальный мифопоэтический хронотоп.
                   </div>
                   <div class="news-post__video">
+                    <div class="video-container">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/V2t0FU1XeDE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
                     <div class="news-post__video_text">Подпись к видео</div>
                   </div>
                 </div>
@@ -317,8 +326,9 @@
     </div>
     <div class="studio-about__video">
       <div class="video__viewport">
-        <!--<img class="video-poster" src="img/youtube-img.png">-->
-        <iframe class="video-frame" src="https://www.youtube-nocookie.com/embed/3TBIf36qiGE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="video-container">
+          <iframe class="video-frame" src="https://www.youtube-nocookie.com/embed/3TBIf36qiGE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
     <div class="studio-about__bottom">
@@ -752,7 +762,7 @@
   <script src="js/TweenMax.min.js"></script>
   <script src="js/main.js"></script>
 
-  <!--<script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>-->
-  <!--<script src="js/map.js"></script>-->
+  <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+  <script src="js/map.js"></script>
 </body>
 </html>

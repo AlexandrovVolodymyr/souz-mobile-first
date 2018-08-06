@@ -14,10 +14,14 @@
   overflow: hidden
   position: relative
   @media screen and (min-width: 768px)
-    padding-top: 148px
+    padding-top: 100px
   &-section
     background-color: #635eaa
     font-size: 0
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+      overflow: hidden
+    @supports (-ms-ime-align: auto)
+      overflow: hidden
   .slick-dots
     bottom: 0
   .slick-slide
@@ -36,12 +40,20 @@
       left: 50%
       transform: translate(-50%, 0)
       width: 100%
-      max-width: 350px
       text-align: center
       opacity: 0.5
+      overflow: hidden
+      max-width: 300px
+      max-height: 40px
+      @media screen and (min-width: 1200px)
+        font-size: 16px
+        line-height: 22px
       &-down
         top: auto
         bottom: 1rem
+        @media screen and (min-width: 1200px)
+          font-size: 16px
+          line-height: 22px
         a
           color: #383838
           font-family: "ProbaPro-Regular", sans-serif

@@ -22,6 +22,9 @@
     width: 50px
     height: 50px
     transition: all 0.5s linear
+    @media screen and (min-width: 580px) and (max-width: 767px)
+      width: 75px
+      height: 75px
     .button--4
       transform: translateY(22.5px)
       .blob
@@ -36,6 +39,12 @@
       img
         width: 50px
         height: 50px
+      @media screen and (min-width: 580px) and (max-width: 767px)
+        width: 75px
+        height: 75px
+        img
+          width: 100%
+          height: 100%
     &_img
       background: url("../img/logo-new.svg")
       width: 100%
@@ -58,10 +67,15 @@
       margin-left: auto
     &-mobile
       margin-top: 25px
-  &__child-center, &__social, &-list
+  &__child-center, &__social, &-list, &__language
     display: none
   &__social
     text-align: center
+    &-link
+      img
+        transition: all 0.5s ease-in-out
+        &:hover
+          filter: drop-shadow(0px 0px 2.5px #000)
     &-mobile
       margin-top: 25px
       text-align: center
@@ -83,7 +97,22 @@
       font-weight: 400
       line-height: 30px
       letter-spacing: 0.18px
-
+    &-mobile
+      //display: inline-block
+      font-size: 14px
+      background-color: #fff
+      cursor: pointer
+      opacity: 0.5
+      color: #383838
+      font-family: "ProbaPro", sans-serif
+      font-weight: 400
+      line-height: 30px
+      letter-spacing: 0.18px
+      text-align: center
+      margin-top: 25px
+      margin-bottom: 50px
+      select
+        border: none
 .mobile__part
   background-color: #fff
   position: fixed
@@ -139,7 +168,6 @@
       font-size: 18px
       line-height: 30px
       transition: all 0.3s linear
-
 .burger
   display: flex
   order: 1
@@ -239,6 +267,11 @@
   .header
     &__container
       max-width: 1200px
+      @-moz-document url-prefix()
+        flex-wrap: inherit
+      @supports (-ms-ime-align: auto)
+        flex-wrap: inherit
+
 
 /*/ HEADER */
 
