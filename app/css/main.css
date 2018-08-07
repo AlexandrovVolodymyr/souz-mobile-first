@@ -1608,7 +1608,13 @@ h5 {
     height: 30px;
     margin: 25px auto;
     position: relative;
-    z-index: 2; }
+    z-index: 2;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out; }
+    .studio__link:hover {
+      -webkit-filter: drop-shadow(0px 0px 2.5px #fff);
+              filter: drop-shadow(0px 0px 2.5px #fff); }
   .studio-icons {
     font-size: 0;
     position: relative; }
@@ -1978,7 +1984,7 @@ h5 {
       .projects-section {
         overflow: hidden; } }
   .projects .slick-dots {
-    bottom: 0; }
+    bottom: -30px; }
   .projects .slick-slide {
     text-align: center; }
   .projects__footer {
@@ -2032,7 +2038,7 @@ h5 {
     @media screen and (min-width: 1300px) {
       .projects__container {
         max-width: 1200px; } }
-  .projects__viewport {
+  .projects__viewport, .projects__viewport2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2166,44 +2172,44 @@ h5 {
     position: absolute;
     width: 100%;
     left: 0;
-    top: 60%; }
+    top: 72.5%; }
     @media screen and (min-width: 769px) {
       .projects__arrows {
-        top: 50%; } }
-    .projects__arrows-right {
+        top: 55%; } }
+    .projects__arrows-right, .projects__arrows-right2 {
       position: absolute;
       right: -20px;
       -webkit-transition: all 0.15s linear;
       -o-transition: all 0.15s linear;
       transition: all 0.15s linear; }
       @media screen and (min-width: 1200px) {
-        .projects__arrows-right {
+        .projects__arrows-right, .projects__arrows-right2 {
           right: -45px; }
-          .projects__arrows-right:hover {
+          .projects__arrows-right:hover, .projects__arrows-right2:hover {
             right: -35px; } }
-      .projects__arrows-right img {
+      .projects__arrows-right img, .projects__arrows-right2 img {
         width: 50px;
         height: 50px; }
         @media screen and (min-width: 1200px) {
-          .projects__arrows-right img {
+          .projects__arrows-right img, .projects__arrows-right2 img {
             width: 90px;
             height: 90px; } }
-    .projects__arrows-left {
+    .projects__arrows-left, .projects__arrows-left2 {
       position: absolute;
       left: -20px;
       -webkit-transition: all 0.15s linear;
       -o-transition: all 0.15s linear;
       transition: all 0.15s linear; }
       @media screen and (min-width: 1200px) {
-        .projects__arrows-left {
+        .projects__arrows-left, .projects__arrows-left2 {
           left: -45px; }
-          .projects__arrows-left:hover {
+          .projects__arrows-left:hover, .projects__arrows-left2:hover {
             left: -35px; } }
-      .projects__arrows-left img {
+      .projects__arrows-left img, .projects__arrows-left2 img {
         width: 50px;
         height: 50px; }
         @media screen and (min-width: 1200px) {
-          .projects__arrows-left img {
+          .projects__arrows-left img, .projects__arrows-left2 img {
             width: 90px;
             height: 90px; } }
     .projects__arrows-wrap {
@@ -2211,6 +2217,9 @@ h5 {
       width: 100%; }
 
 /*/ projects */
+.projects-popup-wrap {
+  width: 100%; }
+
 /* projects popup */
 .fancybox-slide .projects-popup {
   width: 100%;
@@ -2473,8 +2482,7 @@ h5 {
 #vacancies-post {
   padding: 0;
   width: 100%;
-  height: 100%;
-  display: none; }
+  height: 100%; }
 
 .vacancies-post {
   background-color: #635eaa;
@@ -2511,6 +2519,21 @@ h5 {
         font-size: 42px;
         line-height: 54px;
         text-align: center; } }
+    @media screen and (min-width: 1200px) {
+      .vacancies-post__budget {
+        padding-bottom: 0;
+        margin-left: 15px; } }
+  @media screen and (min-width: 1200px) {
+    .vacancies-post__inner {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
   .vacancies-post__exp {
     font-family: "ProbaPro-Medium", sans-serif;
     font-size: 18px;
@@ -2669,7 +2692,8 @@ h5 {
       font-family: "ProbaPro-Regular", sans-serif;
       font-size: 16px;
       line-height: 24px;
-      text-align: left; }
+      text-align: left;
+      text-decoration: underline; }
   .contacts__content-row {
     border-top: 2px solid rgba(255, 255, 255, 0.5);
     display: -webkit-box;
@@ -2835,6 +2859,9 @@ ul.tabs {
       border-radius: 25px;
       background-color: #ffffff;
       color: #383838; }
+      ul.tabs li.current:hover {
+        -webkit-filter: drop-shadow(0px 0px 2.5px #fff);
+                filter: drop-shadow(0px 0px 2.5px #fff); }
     @media screen and (min-width: 768px) {
       ul.tabs li {
         padding: 15px 25px;
@@ -2886,6 +2913,9 @@ ul.tabs {
   src: url("../fonts/ProbaPro/ProbaPro-Medium.woff2") format("woff2");
   font-style: normal;
   font-weight: 500; }
+
+.fancybox-content {
+  width: 100%; }
 
 .fancybox-slide--html .fancybox-content {
   margin: 0 !important; }
@@ -2946,6 +2976,9 @@ ul.tabs {
   @media screen and (min-width: 1200px) {
     .fancybox-button--arrow_right {
       left: calc(140px + 60px) !important; } }
+
+.fancybox-button.disabled {
+  opacity: 0.5 !important; }
 
 .fancybox-infobar {
   color: #fff !important;

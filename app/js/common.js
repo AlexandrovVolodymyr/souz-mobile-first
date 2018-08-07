@@ -107,10 +107,11 @@
 /*/  news slider */
 
 /*  projects slider */
+
   $('.projects__viewport').slick({
     arrows: false,
     dots: false,
-    infinite: true,
+    infinite: false,
     slidesToShow: 3,
     slidesToScroll: 1,
     speed: 1200,
@@ -133,7 +134,36 @@
           slidesToScroll: 1,
           speed: 500
         }
+      }
+    ]
+  });
+  $('.projects__viewport2').slick({
+    arrows: false,
+    dots: false,
+    infinite: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    speed: 1200,
+    nextArrow: '<span class="slick-next"><img src="img/right.png" alt="arrow"></span>',
+    prevArrow: '<span class="slick-prev"><img src="img/left.png" alt="arrow"></span>',
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          speed: 500
+        }
       },
+      {
+        breakpoint: 769,
+        settings: {
+          dots: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          speed: 500
+        }
+      }
     ]
   });
   $('.projects__arrows-left').click(function(){
@@ -142,6 +172,14 @@
 
   $('.projects__arrows-right').click(function(){
     $('.projects__viewport').slick('slickNext');
+  });
+
+  $('.projects__arrows-left2').click(function(){
+    $('.projects__viewport2').slick('slickPrev');
+  });
+
+  $('.projects__arrows-right2').click(function(){
+    $('.projects__viewport2').slick('slickNext');
   });
 
   $(document).find('.slick-cloned .projects__item').removeAttr('data-fancybox');

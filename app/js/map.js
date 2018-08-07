@@ -23,19 +23,46 @@ ymaps.ready(function () {
         // Своё изображение иконки метки.
         iconImageHref: 'img/mapIcon.svg',
         // Размеры метки.
-        iconImageSize: [60, 72],
+        iconImageSize: [80, 120],
         // Смещение левого верхнего угла иконки относительно
         // её "ножки" (точки привязки).
-        iconImageOffset: [-40, -80]
+        iconImageOffset: [-80, -120]
       });
-  if ($(window).width() < 768) {
-    // myMap.behaviors.disable('drag');
-    myMap = new ymaps.Map('map', {
-      center: [55.72903023871346, 37.502081510803686],
-    });
-
-  }
+  // if ($(window).width() < 768) {
+  //   // myMap.behaviors.disable('drag');
+  //   myMap = new ymaps.Map('map', {
+  //     center: [55.72903023871346, 37.502081510803686],
+  //   });
+  //
+  // }
   myMap.geoObjects.add(myPlacemark);
+  function resizeMap() {
+    // myMap.setBounds(myMap.geoObjects.getBounds());
+
+    myMap.setZoom( 12 );
+    myPlacemark.options.set('iconImageSize', [40, 60]);
+    myPlacemark.options.set('iconImageOffset', [-40, -60]);
+  }
+
+  if (window.matchMedia('(max-width: 768px)').matches) {
+    resizeMap();
+  } else {
+    myMap.setZoom( 14 );
+    myPlacemark.options.set('iconImageSize', [80, 120]);
+    myPlacemark.options.set('iconImageOffset', [-80, -120]);
+  }
+
+  window.onresize = function () {
+    if (window.matchMedia('(max-width: 768px)').matches) {
+      resizeMap();
+    } else {
+      myMap.setZoom( 14 );
+      myPlacemark.options.set('iconImageSize', [80, 120]);
+      myPlacemark.options.set('iconImageOffset', [-80, -120]);
+    }
+    // console.log('resize');
+  }
+
   // myMap.behaviors.disable('scrollZoom');
 
   // myMap.controls.add('zoomControl');

@@ -7,5 +7,8 @@ $(document).ready(function () {
 
         $(this).addClass('current');
         $("#"+tab_id).addClass('current');
+
+        $('.projects__viewport').slick('refresh');
+        $('.projects__viewport2').slick('refresh');
     })
 });

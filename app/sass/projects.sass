@@ -23,9 +23,16 @@
     @supports (-ms-ime-align: auto)
       overflow: hidden
   .slick-dots
-    bottom: 0
+    bottom: -30px
   .slick-slide
     text-align: center
+    //transform: translate(-145px, 10px) rotate(5deg)
+    //&.center
+    //  position: relative
+    //  z-index: 1
+    //&.center + .slick-slide
+    //  transform: translate(145px, 10px) rotate(-5deg)
+
   &__footer
     background-color: #bdd747
     position: relative
@@ -70,7 +77,8 @@
       max-width: 1000px
     @media screen and (min-width: 1300px)
       max-width: 1200px
-  &__viewport
+  &__viewport,
+  &__viewport2
     display: flex
     justify-content: space-between
     flex-wrap: wrap
@@ -179,10 +187,10 @@
     position: absolute
     width: 100%
     left: 0
-    top: 60%
+    top: 72.5%
     @media screen and (min-width: 769px)
-      top: 50%
-    &-right
+      top: 55%
+    &-right, &-right2
       position: absolute
       right: -20px
       transition: all 0.15s linear
@@ -196,7 +204,7 @@
         @media screen and (min-width: 1200px)
           width: 90px
           height: 90px
-    &-left
+    &-left, &-left2
       position: absolute
       left: -20px
       transition: all 0.15s linear
@@ -215,7 +223,8 @@
       width: 100%
 
 /*/ projects */
-
+.projects-popup-wrap
+  width: 100%
 /* projects popup */
 .fancybox-slide
   .projects-popup

@@ -175,7 +175,8 @@
           </div>
         </div>
         <div class="news-list">
-          <div class="item" data-fancybox data-src="#news-post" href="javascript:;">
+          <!--<div class="item" data-fancybox data-src="#news-post" href="javascript:;">-->
+          <div class="item" data-fancybox data-type="ajax" data-src="news-popup-1.html" href="javascript:;">
             <div class="news__item">
               <div class="news__image">
                 <a href="#"><img src="img/news1.png" alt="news"></a>
@@ -225,64 +226,6 @@
                   Небольшой текст новости в несколько строк
                 </span>
               </a>
-            </div>
-          </div>
-        </div>
-        <div style="display: none; width: 100%; height: 100%;" id="news-post">
-          <div class="news-post">
-            <div class="news-post__container">
-              <div class="news-post__number">12 марта</div>
-              <div class="news-post__title">Небольшой заголовок новости в несколько строк или же более</div>
-              <div class="header__social">
-                <a href="" class="studio-about__share">Поделиться:</a>
-                <a href="#" class="header__social-link">
-                  <img src="img/vk.svg" alt="vkontakte">
-                </a>
-                <a href="#" class="header__social-link">
-                  <img src="img/facebook.svg" alt="facebook">
-                </a>
-                <a href="#" class="header__social-link">
-                  <img src="img/twitter.png" alt="twitter">
-                </a>
-              </div>
-              <div class="news-post__content">
-                <div class="news-post__image">
-                  <img src="img/news-post1.png" alt="news-post-image">
-                </div>
-                <div class="news-post__description">
-                  <div class="news-post__text-default">
-                    Декодирование нивелирует генезис свободного стиха. Силлабика просветляет музыкальный полифонический роман, причём сам Тредиаковский свои стихи мыслил как “стихотворное дополнение”.
-                  </div>
-                  <div class="news-post__text-quote news-post__text-orange">
-                    «Уместно оговориться: мифопоэтический хронотоп представляет собой стих, однако дальнейшее развитие приемов»
-                  </div>
-                  <div class="news-post__text-orange news-post__text-mini">
-                    — рассказала председатель правления
-                    киностудии Юлиана Слащева.
-                  </div>
-                  <div class="news-post__text-default">
-                    Наш «сумароковский» классицизм – чисто русское явление, но синхрония непосредственно приводит метр, об этом свидетельствуют краткость и завершенность формы, бессюжетность, своеобразие тематического развертывания. Возврат к стереотипам слабопроницаем. Ямб традиционен.
-                  </div>
-                  <div class="news-post__picture">
-                    <img src="img/news-post-img1.jpg" alt="image">
-                    <div class="news-post__picture_text">
-                      Подпись к изображению
-                    </div>
-                  </div>
-                  <div class="news-post__subtitle">
-                    Подзаголовок новости
-                  </div>
-                  <div class="news-post__text-default">
-                    Из приведенных текстуальных фрагментов <span class="news-post__text-orange">видно</span>, как олицетворение приводит композиционный анализ. Модальность высказывания недоступно аллитерирует экзистенциальный мифопоэтический хронотоп.
-                  </div>
-                  <div class="news-post__video">
-                    <div class="video-container">
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/V2t0FU1XeDE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                    <div class="news-post__video_text">Подпись к видео</div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -372,7 +315,7 @@
           <div class="projects__title">Проекты</div>
           <ul class="tabs">
             <li class="tab-link current" data-tab="tab-1">Золотая коллекция</li>
-            <li class="tab-link" data-tab="tab-2">Новая коллекция</li>
+            <li class="tab-link tab-link2" data-tab="tab-2">Новая коллекция</li>
           </ul>
         </div>
         <div id="tab-1" class="tab-content current">
@@ -387,7 +330,7 @@
           </div>
           <div class="projects__viewport">
             <div class="item">
-              <div class="projects__item" data-fancybox='gallery' data-src="#project1" href="javascript:;">
+              <div class="projects__item" data-fancybox='gallery' data-type="ajax" data-src="projects-gold-1.html" href="javascript:;">
                 <div class="projects__image">
                   <img src="img/project1.png" alt="Простоквашино">
                 </div>
@@ -403,23 +346,23 @@
               </div>
             </div>
             <div class="item">
-              <div class="projects__item" data-fancybox='gallery' data-src="#project2" href="javascript:;">
+              <div class="projects__item" data-fancybox='gallery' data-type="ajax" data-src="projects-gold-2.html" href="javascript:;">
                 <div class="projects__image">
                   <img src="img/project2.png" alt="Возвращение блудного попугая">
                 </div>
                 <div class="projects__description">
                   <a href="" class="projects__link">Возвращение блудного попугая</a>
                   <span class="projects__text">
-                  Режиссер: Караваев В.
-                </span>
+                    Режиссер: Караваев В.
+                  </span>
                   <span class="projects__text">
-                  Сценарист: Курляндский А., Караваев В.
-                </span>
+                    Сценарист: Курляндский А., Караваев В.
+                  </span>
                 </div>
               </div>
             </div>
             <div class="item">
-              <div class="projects__item" data-fancybox='gallery' data-src="#project3" href="javascript:;">
+              <div class="projects__item" data-fancybox='gallery' data-type="ajax" data-src="projects-gold-3.html" href="javascript:;">
                 <div class="projects__image">
                   <img src="img/project3.png" alt="Возвращение блудного попугаяы">
                 </div>
@@ -435,7 +378,7 @@
               </div>
             </div>
             <div class="item">
-              <div class="projects__item" data-fancybox='gallery' data-src="#project4" href="javascript:;">
+              <div class="projects__item" data-fancybox='gallery' data-type="ajax" data-src="projects-gold-4.html" href="javascript:;">
                 <div class="projects__image">
                   <img src="img/project3.png" alt="Бременские музыканты">
                 </div>
@@ -450,92 +393,147 @@
                 </div>
               </div>
             </div>
-
-          </div>
-          <div class="projects-popup projects-popup-gallery projects-popup-gallery-1" id="project1" style="display: none">
-            <div class="projects-popup-wrap">
-              <div class="projects-popup__left">
-                <div class="projects-popup__title">
-                  Трое из Простоквашино
+            <div class="item">
+              <div class="projects__item" data-fancybox='gallery' data-type="ajax" data-src="projects-gold-5.html" href="javascript:;">
+                <div class="projects__image">
+                  <img src="img/project3.png" alt="Бременские музыканты">
                 </div>
-                <div class="projects-popup__release">
-                  выпуск 1 – 1984, выпуск 2 – 1987, выпуск 3 – 1988
-                </div>
-                <div class="projects-popup__writer">
-                  Режиссер: Караваев В.
-                </div>
-                <div class="projects-popup__writer">
-                  Сценарист: Курляндский А., Караваев В.
-                </div>
-                <div class="projects-popup__text">
-                  Серия рисованных мультфильмов о приключениях хорошего и доброго, но немного капризного и слегка сварливого попугая Кеши, который, обидевшись на своего друга Вовку, в доме которого живет, улетает на поиски приключений. Конечно же, приключения для Кеши сразу находятся – жить одному не так-то просто, равно как и найти новых друзей – но, к счастью для Кеши и Вовки, возвращение блудного попугая все же состоится. И действительно, хоть «это вам не Таити», лучшего места, чем дом, просто не найти!
-                </div>
-                <div class="header__social">
-                  <a href="" class="studio-about__share">Поделиться:</a>
-                  <a href="#" class="header__social-link">
-                    <img src="img/vk.svg" alt="vkontakte">
-                  </a>
-                  <a href="#" class="header__social-link">
-                    <img src="img/facebook.svg" alt="facebook">
-                  </a>
-                  <a href="#" class="header__social-link">
-                    <img src="img/instagram.svg" alt="instagram">
-                  </a>
-                </div>
-              </div>
-              <div class="projects-popup__right">
-                <div class="projects-popup__border-img">
-
+                <div class="projects__description">
+                  <a href="" class="projects__link">Бременские музыканты</a>
+                  <span class="projects__text">
+                  Режиссер: Ковалевская И., Ливанов В.
+                </span>
+                  <span class="projects__text">
+                  Сценарист: Ливанов В., Энтин Ю.
+                </span>
                 </div>
               </div>
             </div>
-
-
-          </div>
-          <div class="projects-popup projects-popup-gallery projects-popup-gallery-2" id="project2" style="display: none;">
-            <div class="projects-popup-wrap">
-              <div class="projects-popup__left">
-                <div class="projects-popup__title">
-                  Возвращение блудного попугая
+            <div class="item">
+              <div class="projects__item" data-fancybox='gallery' data-type="ajax" data-src="projects-gold-6.html" href="javascript:;">
+                <div class="projects__image">
+                  <img src="img/project3.png" alt="Бременские музыканты">
                 </div>
-                <div class="projects-popup__release">
-                  выпуск 1 – 1984, выпуск 2 – 1987, выпуск 3 – 1988
-                </div>
-                <div class="projects-popup__writer">
-                  Режиссер: Караваев В.
-                </div>
-                <div class="projects-popup__writer">
-                  Сценарист: Курляндский А., Караваев В.
-                </div>
-                <div class="projects-popup__text">
-                  Серия рисованных мультфильмов о приключениях хорошего и доброго, но немного капризного и слегка сварливого попугая Кеши, который, обидевшись на своего друга Вовку, в доме которого живет, улетает на поиски приключений. Конечно же, приключения для Кеши сразу находятся – жить одному не так-то просто, равно как и найти новых друзей – но, к счастью для Кеши и Вовки, возвращение блудного попугая все же состоится. И действительно, хоть «это вам не Таити», лучшего места, чем дом, просто не найти!
-                </div>
-                <div class="header__social">
-                  <a href="" class="studio-about__share">Поделиться:</a>
-                  <a href="#" class="header__social-link">
-                    <img src="img/vk.svg" alt="vkontakte">
-                  </a>
-                  <a href="#" class="header__social-link">
-                    <img src="img/facebook.svg" alt="facebook">
-                  </a>
-                  <a href="#" class="header__social-link">
-                    <img src="img/instagram.svg" alt="instagram">
-                  </a>
+                <div class="projects__description">
+                  <a href="" class="projects__link">Бременские музыканты</a>
+                  <span class="projects__text">
+                  Режиссер: Ковалевская И., Ливанов В.
+                </span>
+                  <span class="projects__text">
+                  Сценарист: Ливанов В., Энтин Ю.
+                </span>
                 </div>
               </div>
-              <div class="projects-popup__right">
-                <div class="projects-popup__border-img">
-                  <img src="img/parrot.png" alt="Возвращение блудного попугая">
+            </div>
+            <div class="item">
+              <div class="projects__item" data-fancybox='gallery' data-type="ajax" data-src="projects-gold-7.html" href="javascript:;">
+                <div class="projects__image">
+                  <img src="img/project3.png" alt="Бременские музыканты">
+                </div>
+                <div class="projects__description">
+                  <a href="" class="projects__link">Бременские музыканты</a>
+                  <span class="projects__text">
+                  Режиссер: Ковалевская И., Ливанов В.
+                </span>
+                  <span class="projects__text">
+                  Сценарист: Ливанов В., Энтин Ю.
+                </span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="projects__item" data-fancybox='gallery' data-type="ajax" data-src="projects-gold-8.html" href="javascript:;">
+                <div class="projects__image">
+                  <img src="img/project3.png" alt="Бременские музыканты">
+                </div>
+                <div class="projects__description">
+                  <a href="" class="projects__link">Бременские музыканты</a>
+                  <span class="projects__text">
+                  Режиссер: Ковалевская И., Ливанов В.
+                </span>
+                  <span class="projects__text">
+                  Сценарист: Ливанов В., Энтин Ю.
+                </span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="projects-popup projects-popup-gallery projects-popup-gallery-3" id="project3"></div>
-          <div class="projects-popup projects-popup-gallery projects-popup-gallery-4" id="project4"></div>
         </div>
         <div id="tab-2" class="tab-content">
           <div class="projects__info">
             Золотую коллекцию всеми любимых мультипликационных шедевров вы можете посмотреть на нашем сайте онлайн бесплатно и в хорошем качестве!
+          </div>
+          <div class="projects__arrows">
+            <div class="projects__arrows-wrap">
+              <span class="projects__arrows-left2"><img src="img/left.png" alt="left"></span>
+              <span class="projects__arrows-right2"><img src="img/right.png" alt="right"></span>
+            </div>
+          </div>
+          <div class="projects__viewport2">
+            <div class="item">
+              <div class="projects__item" data-fancybox='gallery2' data-type="ajax" data-src="projects-new-1.html" href="javascript:;">
+                <div class="projects__image">
+                  <img src="img/project1.png" alt="Простоквашино">
+                </div>
+                <div class="projects__description">
+                  <a href="" class="projects__link">Трое из Простоквашино</a>
+                  <span class="projects__text">
+                  Режиссер: Попов В.
+                </span>
+                  <span class="projects__text">
+                  Сценарист: Успенский Э.
+                </span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="projects__item" data-fancybox='gallery2' data-type="ajax" data-src="projects-new-2.html" href="javascript:;">
+                <div class="projects__image">
+                  <img src="img/project2.png" alt="Возвращение блудного попугая">
+                </div>
+                <div class="projects__description">
+                  <a href="" class="projects__link">Возвращение блудного попугая</a>
+                  <span class="projects__text">
+                  Режиссер: Караваев В.
+                </span>
+                  <span class="projects__text">
+                  Сценарист: Курляндский А., Караваев В.
+                </span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="projects__item" data-fancybox='gallery2' data-type="ajax" data-src="projects-new-3.html" href="javascript:;">
+                <div class="projects__image">
+                  <img src="img/project3.png" alt="Возвращение блудного попугаяы">
+                </div>
+                <div class="projects__description">
+                  <a href="" class="projects__link">Бременские музыканты</a>
+                  <span class="projects__text">
+                  Режиссер: Ковалевская И., Ливанов В.
+                </span>
+                  <span class="projects__text">
+                  Сценарист: Ливанов В., Энтин Ю.
+                </span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="projects__item" data-fancybox='gallery2' data-type="ajax" data-src="projects-new-4.html" href="javascript:;">
+                <div class="projects__image">
+                  <img src="img/project3.png" alt="Бременские музыканты">
+                </div>
+                <div class="projects__description">
+                  <a href="" class="projects__link">Бременские музыканты</a>
+                  <span class="projects__text">
+                  Режиссер: Ковалевская И., Ливанов В.
+                </span>
+                  <span class="projects__text">
+                  Сценарист: Ливанов В., Энтин Ю.
+                </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -561,7 +559,7 @@
         <div class="vacancies__title">Вакансии</div>
         <ul class="vacancies__list">
           <li class="vacancies__item">
-            <a data-fancybox data-src="#vacancies-post" href="javascript:;" class="vacancies__link">2D Аниматор</a>
+            <a  data-fancybox data-type="ajax" data-src="vacancies-2d-animator.html" href="javascript:;" class="vacancies__link">2D Аниматор</a>
           </li>
           <li class="vacancies__item">
             <a href="" class="vacancies__link">SMM Manager / СММ Менедж</a>
@@ -582,70 +580,11 @@
           </a>
         </div>
       </div>
-      <div id="vacancies-post">
-        <div class="vacancies-post">
-          <div class="vacancies-post__container">
-            <div class="vacancies-post__title">2D аниматор</div>
-            <div class="vacancies-post__budget">з/п не указана</div>
-            <div class="vacancies-post__exp">
-              Требуемый опыт работы: 1–3 года
-            </div>
-            <div class="vacancies-post__exp">
-              Полная занятость, полный день
-            </div>
-            <div class="vacancies-post__row">
-              <div class="vacancies-post__text">
-                СОЮЗМУЛЬТФИЛЬМ приглашает 2Д-аниматора на ключевой проект «Простоквашино».
-                <br><br><br>
-                Нам обязательно нужны Ваши: <br><br>
-              </div>
-              <ul class="vacancies-post__text">
-                <li>• <span>Навыки работы с графическим планшетом, знание графического редактора, в котором вы работаете (это могут быть - TVpaint, Flash, Toon Boom и пр.);</span></li>
-                <li>• <span>Навыки работы в четко заданные сроки, умение работать в заданном стиле проекта;</span></li>
-                <li>• <span>Наличие деморила и готовность выполнить тестовое задание;</span></li>
-                <li>• <span>Желание влиться в коллектив крупнейшей студии в стране.</span></li>
-                <li>• <span>На режим особой срочности утверждены особые расценки!</span></li>
-              </ul>
-            </div>
-            <div class="vacancies-post__row">
-              <ul class="vacancies-post__text">
-                <li class="vacancies-post__text-opacity">Требования:</li>
-                <li>• <span>Опыт работы в анимационных 2D проектах (от 1 года);</span></li>
-                <li>• <span>Портфолио;</span></li>
-                <li>• <span>Знание принципов препродашкна и продакшна;</span></li>
-                <li>• <span>Умение работать в проектных трекерах (Cerebro, Shotgun и пр.), как плюс;</span></li>
-                <li>• <span>Умение работать в команде и нести в себе функционал одного из руководителей проекта.</span></li>
-              </ul>
-            </div>
-            <div class="vacancies-post__row vacancies-post__row--last">
-              <ul class="vacancies-post__text">
-                <li class="vacancies-post__text-opacity">Обязанности:</li>
-                <li>• <span>Опыт работы в анимационных 2D проектах (от 1 года);</span></li>
-                <li>• <span>Портфолио;</span></li>
-                <li>• <span>Знание принципов препродашкна и продакшна;</span></li>
-                <li>• <span>Умение работать в проектных трекерах (Cerebro, Shotgun и пр.), как плюс;</span></li>
-                <li>• <span>Умение работать в команде и нести в себе функционал одного из руководителей проекта.</span></li>
-              </ul>
-            </div>
-            <div class="vacancies__footer">
-              <div class="vacancies__footer-text">
-                По всем вопросам трудоустройства
-              </div>
-              <div class="vacancies__footer-text">
-                пишите Дарья Стрекалова
-              </div>
-              <a href="mailto: hr@souzmult.com" class="vacancies__footer-link">
-                hr@souzmult.com
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
-  <div class="animate-line" id="line4" data-color="635EAA"></div>
   <section class="map-section">
+    <div class="animate-line" id="line4" data-color="635EAA" style="top: 0;"></div>
     <div id="map" class="map"></div>
     <div class="animate-line2" id="line8" data-color="00ABCC"></div>
   </section>

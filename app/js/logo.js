@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     /* logo change background-color */
 
     let scroll_pos = 0;

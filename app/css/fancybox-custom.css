@@ -33,6 +33,9 @@
   font-style: normal;
   font-weight: 500; }
 
+.fancybox-content {
+  width: 100%; }
+
 .fancybox-slide--html .fancybox-content {
   margin: 0 !important; }
 
@@ -92,6 +95,9 @@
   @media screen and (min-width: 1200px) {
     .fancybox-button--arrow_right {
       left: calc(140px + 60px) !important; } }
+
+.fancybox-button.disabled {
+  opacity: 0.5 !important; }
 
 .fancybox-infobar {
   color: #fff !important;
