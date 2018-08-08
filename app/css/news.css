@@ -76,6 +76,9 @@
     font-family: "ProbaPro-Medium", sans-serif;
     line-height: 40px;
     text-align: center; }
+    @media screen and (min-width: 900px) {
+      .news__count {
+        display: block; } }
   .news__image img {
     width: 200px;
     height: 200px;

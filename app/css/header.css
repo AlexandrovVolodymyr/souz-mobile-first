@@ -133,8 +133,8 @@
       -o-transition: all 0.5s ease-in-out;
       transition: all 0.5s ease-in-out; }
       .header__social-link img:hover {
-        -webkit-filter: drop-shadow(0px 0px 2.5px #000);
-                filter: drop-shadow(0px 0px 2.5px #000); }
+        -webkit-filter: drop-shadow(0px 0px 2.5px #ccc);
+                filter: drop-shadow(0px 0px 2.5px #ccc); }
     .header__social-mobile {
       margin-top: 25px;
       text-align: center; }
@@ -183,11 +183,12 @@
   transition: all 0.5s ease-in-out;
   width: 100%; }
   .mobile__part-active {
-    top: 50px;
+    top: 49px;
     height: 100%;
     width: 100%;
     opacity: 1;
-    visibility: visible; }
+    visibility: visible;
+    overflow-y: scroll; }
   .mobile__part .header-list-mobile {
     width: calc(100% - 2rem);
     margin: auto; }

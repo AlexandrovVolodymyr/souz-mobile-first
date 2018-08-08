@@ -1,6 +1,6 @@
 (function () {
 
-/*  full page slider */
+  /*  full page slider */
   $('.gallery').slick({
     arrows: true,
     dots: true,
@@ -11,9 +11,9 @@
     nextArrow: '<span class="slick-next"><img src="img/right.png" alt="arrow"></span>',
     prevArrow: '<span class="slick-prev"><img src="img/left.png" alt="arrow"></span>'
   });
-/*  full page slider */
+  /*  full page slider */
 
-/*  news slider */
+  /*  news slider */
   $('.news-list').slick({
     arrows: false,
     dots: false,
@@ -104,14 +104,14 @@
 
   let itemH = $('.news__item').innerHeight();
 
-/*/  news slider */
+  /*/  news slider */
 
-/*  projects slider */
+  /*  projects slider */
 
   $('.projects__viewport').slick({
     arrows: false,
     dots: false,
-    infinite: false,
+    infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     speed: 1200,
@@ -132,6 +132,57 @@
           dots: true,
           slidesToShow: 1,
           slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: '200px',
+          variableWidth: false,
+          speed: 500
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          dots: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: '160px',
+          variableWidth: false,
+          speed: 500
+        }
+      },
+      {
+        breakpoint: 501,
+        settings: {
+          dots: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: '140px',
+          variableWidth: false,
+          speed: 500
+        }
+      },
+      {
+        breakpoint: 451,
+        settings: {
+          dots: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: '100px',
+          variableWidth: false,
+          speed: 500
+        }
+      },
+      {
+        breakpoint: 376,
+        settings: {
+          dots: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: '80px',
+          variableWidth: false,
           speed: 500
         }
       }
@@ -140,7 +191,7 @@
   $('.projects__viewport2').slick({
     arrows: false,
     dots: false,
-    infinite: false,
+    infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     speed: 1200,
@@ -161,6 +212,57 @@
           dots: true,
           slidesToShow: 1,
           slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: '200px',
+          variableWidth: false,
+          speed: 500
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          dots: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: '160px',
+          variableWidth: false,
+          speed: 500
+        }
+      },
+      {
+        breakpoint: 501,
+        settings: {
+          dots: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: '140px',
+          variableWidth: false,
+          speed: 500
+        }
+      },
+      {
+        breakpoint: 451,
+        settings: {
+          dots: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: '100px',
+          variableWidth: false,
+          speed: 500
+        }
+      },
+      {
+        breakpoint: 376,
+        settings: {
+          dots: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: '80px',
+          variableWidth: false,
           speed: 500
         }
       }
@@ -182,15 +284,20 @@
     $('.projects__viewport2').slick('slickNext');
   });
 
-  $(document).find('.slick-cloned .projects__item').removeAttr('data-fancybox');
+  // $(document).find('.slick-cloned .projects__item').removeAttr('data-fancybox');
 
-/*/  projects slider */
+  /*/  projects slider */
 
   //fancy box loop images
   $('[data-fancybox]').fancybox({
-      loop: true,
-      'scrolling': 'no',
-      'iframe': {'scrolling': 'no'}
+    'loop': 'true',
+    'scrolling': 'no',
+    'iframe': {'scrolling': 'no'}
+  });
+
+  $().fancybox({
+    selector : '[data-fancybox="gallery2"]',
+    loop     : true
   });
 
 })();

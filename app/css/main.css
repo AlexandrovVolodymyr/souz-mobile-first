@@ -770,8 +770,8 @@ h5 {
       -o-transition: all 0.5s ease-in-out;
       transition: all 0.5s ease-in-out; }
       .header__social-link img:hover {
-        -webkit-filter: drop-shadow(0px 0px 2.5px #000);
-                filter: drop-shadow(0px 0px 2.5px #000); }
+        -webkit-filter: drop-shadow(0px 0px 2.5px #ccc);
+                filter: drop-shadow(0px 0px 2.5px #ccc); }
     .header__social-mobile {
       margin-top: 25px;
       text-align: center; }
@@ -820,11 +820,12 @@ h5 {
   transition: all 0.5s ease-in-out;
   width: 100%; }
   .mobile__part-active {
-    top: 50px;
+    top: 49px;
     height: 100%;
     width: 100%;
     opacity: 1;
-    visibility: visible; }
+    visibility: visible;
+    overflow-y: scroll; }
   .mobile__part .header-list-mobile {
     width: calc(100% - 2rem);
     margin: auto; }
@@ -1216,6 +1217,9 @@ h5 {
     font-family: "ProbaPro-Medium", sans-serif;
     line-height: 40px;
     text-align: center; }
+    @media screen and (min-width: 900px) {
+      .news__count {
+        display: block; } }
   .news__image img {
     width: 200px;
     height: 200px;
@@ -1609,9 +1613,9 @@ h5 {
     margin: 25px auto;
     position: relative;
     z-index: 2;
-    -webkit-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out; }
+    -webkit-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out; }
     .studio__link:hover {
       -webkit-filter: drop-shadow(0px 0px 2.5px #fff);
               filter: drop-shadow(0px 0px 2.5px #fff); }
@@ -1968,12 +1972,15 @@ h5 {
 .projects {
   background-color: #bdd747;
   padding-top: 60px;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   overflow: hidden;
   position: relative; }
   @media screen and (min-width: 768px) {
     .projects {
       padding-top: 100px; } }
+  @media screen and (min-width: 769px) {
+    .projects {
+      padding-bottom: 1rem; } }
   .projects-section {
     background-color: #635eaa;
     font-size: 0; }
@@ -1984,9 +1991,40 @@ h5 {
       .projects-section {
         overflow: hidden; } }
   .projects .slick-dots {
-    bottom: -30px; }
+    bottom: 0; }
+  .projects .slick-current {
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
+    @media screen and (min-width: 769px) {
+      .projects .slick-current {
+        -webkit-transition: unset;
+        -o-transition: unset;
+        transition: unset; } }
   .projects .slick-slide {
-    text-align: center; }
+    text-align: center;
+    margin: 0 0.5rem; }
+    @media screen and (min-width: 581px) {
+      .projects .slick-slide {
+        margin: 0 1rem; } }
+  .projects .slick-center {
+    position: relative;
+    z-index: 1;
+    -webkit-transform: translate3d(0, 0, 0) scale(1.1);
+            transform: translate3d(0, 0, 0) scale(1.1); }
+    @media screen and (min-width: 769px) {
+      .projects .slick-center {
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none; } }
+  .projects .slick-track {
+    padding: 1rem 0; }
+    @media screen and (min-width: 750px) {
+      .projects .slick-track {
+        padding: 1.5rem 0; } }
+    @media screen and (min-width: 769px) {
+      .projects .slick-track {
+        padding: 0; } }
   .projects__footer {
     background-color: #bdd747;
     position: relative;
@@ -2027,7 +2065,10 @@ h5 {
       width: 100%; }
   .projects__container {
     width: 100%;
-    padding: 0 1rem; }
+    padding: 0; }
+    @media screen and (min-width: 769px) {
+      .projects__container {
+        padding: 0 1rem; } }
     @media screen and (min-width: 992px) {
       .projects__container {
         max-width: 992px;
@@ -2050,24 +2091,8 @@ h5 {
     position: inherit; }
   .projects__item {
     cursor: pointer;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 180px;
-            flex: 0 0 180px;
-    max-width: 180px;
     margin: auto;
     position: relative; }
-    .projects__item:hover .projects__description {
-      background-color: #635eaa; }
-    .projects__item:hover .projects__link {
-      color: #fff; }
-    .projects__item:hover .projects__image img {
-      width: 100%;
-      -webkit-transition: all 0.2s linear;
-      -o-transition: all 0.2s linear;
-      transition: all 0.2s linear;
-      -webkit-transform: scale(1.2);
-          -ms-transform: scale(1.2);
-              transform: scale(1.2); }
     @media screen and (min-width: 768px) {
       .projects__item {
         max-width: 320px; } }
@@ -2075,6 +2100,19 @@ h5 {
       .projects__item {
         max-width: 300px;
         margin: 0; } }
+    @media screen and (min-width: 1200px) {
+      .projects__item:hover .projects__description {
+        background-color: #635eaa; }
+      .projects__item:hover .projects__link {
+        color: #fff; }
+      .projects__item:hover .projects__image img {
+        width: 100%;
+        -webkit-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2); } }
     @media screen and (min-width: 1300px) {
       .projects__item {
         max-width: 320px; } }
@@ -2084,13 +2122,17 @@ h5 {
     font-size: 0;
     overflow: hidden; }
     .projects__image img {
-      width: 100%;
-      -webkit-transition: all 0.2s linear;
-      -o-transition: all 0.2s linear;
-      transition: all 0.2s linear; }
+      border-top-left-radius: 21px;
+      border-top-right-radius: 21px;
+      width: 100%; }
       @media screen and (min-width: 768px) {
         .projects__image img {
           height: 220px; } }
+      @media screen and (min-width: 1200px) {
+        .projects__image img {
+          -webkit-transition: all 0.2s linear;
+          -o-transition: all 0.2s linear;
+          transition: all 0.2s linear; } }
   .projects__description {
     background-color: #fff;
     border-bottom-left-radius: 21px;
@@ -2109,7 +2151,8 @@ h5 {
     font-size: 18px;
     line-height: 20px;
     margin-bottom: 20px;
-    text-align: center; }
+    text-align: center;
+    min-height: 80px; }
     @media screen and (min-width: 768px) {
       .projects__link {
         font-size: 30px;
@@ -2153,7 +2196,8 @@ h5 {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
-    text-align: center; }
+    text-align: center;
+    padding: 1rem 1rem 0; }
     @media screen and (min-width: 768px) {
       .projects__info {
         font-size: 20px;
@@ -2168,6 +2212,7 @@ h5 {
         margin: 30px 0;
         padding: 0; } }
   .projects__arrows {
+    display: none;
     cursor: pointer;
     position: absolute;
     width: 100%;
@@ -2175,6 +2220,7 @@ h5 {
     top: 72.5%; }
     @media screen and (min-width: 769px) {
       .projects__arrows {
+        display: block;
         top: 55%; } }
     .projects__arrows-right, .projects__arrows-right2 {
       position: absolute;
@@ -2862,7 +2908,7 @@ ul.tabs {
       ul.tabs li.current:hover {
         -webkit-filter: drop-shadow(0px 0px 2.5px #fff);
                 filter: drop-shadow(0px 0px 2.5px #fff); }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 769px) {
       ul.tabs li {
         padding: 15px 25px;
         font-size: 18px;
@@ -2870,7 +2916,10 @@ ul.tabs {
 
 .tab-content {
   display: none;
-  padding: 15px; }
+  padding: 0; }
+  @media screen and (min-width: 769px) {
+    .tab-content {
+      padding: 0 1rem; } }
   .tab-content.current {
     display: inherit; }
 
@@ -3097,6 +3146,7 @@ section {
 
 .animate-line {
   position: absolute;
+  top: 0;
   z-index: 2;
   width: 100%;
   pointer-events: none; }
