@@ -1,38 +1,4 @@
 /* TABS */
-/* FONTS */
-@font-face {
-  font-family: "ProbaPro";
-  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
-  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
-  font-style: normal; }
-
-@font-face {
-  font-family: "LucidGrande-Regular";
-  src: url("../fonts/LucidaGrande/LucidaGrande.ttf") format("ttf");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "ProbaPro-Regular";
-  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
-  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "ProbaPro-Bold";
-  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff") format("woff");
-  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 700; }
-
-@font-face {
-  font-family: "ProbaPro-Medium";
-  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff") format("woff");
-  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 500; }
-
 .tabs-container {
   position: relative;
   padding: 0 1rem; }
@@ -62,11 +28,12 @@ ul.tabs {
     background: none;
     color: #fff;
     display: inline-block;
-    padding: 5px 10px;
+    padding: 0 10px;
     cursor: pointer;
     font-family: "ProbaPro-Bold",sans-serif;
     font-size: 9px;
-    line-height: 20px;
+    height: 50px;
+    line-height: 50px;
     text-transform: uppercase;
     letter-spacing: 0.67px;
     -webkit-transition: color 0.3s linear;
@@ -83,9 +50,10 @@ ul.tabs {
                 filter: drop-shadow(0px 0px 2.5px #fff); }
     @media screen and (min-width: 769px) {
       ul.tabs li {
-        padding: 15px 25px;
+        padding: 0 25px;
         font-size: 18px;
-        line-height: 20px; } }
+        height: 50px;
+        line-height: 50px; } }
 
 .tab-content {
   display: none;

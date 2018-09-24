@@ -54,6 +54,17 @@
  
   var x = 0;
   $(".animate-line").each(function(){
+    // var h_max = 300;
+   
+    // if( w < 1120 && w > 768 ) {
+    //   var h_max = 260;
+    // } else if( w < 550 ) {
+    //   var h_max = 120;
+    // }
+    //  alert(h_max);
+    // heightMax();
+    
+    
 
     var id=$(this).attr('id');
     var color=$(this).data('color');
@@ -73,6 +84,15 @@
       var w_height = $(window).height();
       var h_height = w_height / 2;
       var s_top = $(window).scrollTop()-300;
+      
+      // var h_max = 300;
+   
+      // if( w < 1120 && w > 768 ) {
+      //   var h_max = 260;
+      // } else if( w < 550 ) {
+      //   var h_max = 120;
+      // }
+      // heightMax();
 
       if(top < s_top + w_height && top + w_height > s_top + w_height){
         var acti = top - s_top;
@@ -90,7 +110,7 @@
 
   $(document).ready(function(){
     var w_block = $('#line4').width();
-    // $('#line4 svg').removeAttr('width');
+    $('#line4 svg').removeAttr('width');
     $('#line4 svg').css({
       'width': w_block + 'px',
       // 'height': $('#line4').height() + 'px'
@@ -105,6 +125,19 @@
     });
   });
 
+
+
+  function heightMax() {
+    $(window).resize(function(){
+      var w = $(window).width();
+      var h_max = 300;
+      if( w < 1120 && w > 768 ) {
+        h_max = 260;
+      } else if( w < 550 ) {
+        h_max = 120;
+      }
+    }
+  }
 
   /*/  divs animation */
 })();

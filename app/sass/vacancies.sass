@@ -1,9 +1,5 @@
 /* VACANCIES */
 
-@import 'vars'
-@import 'mixins'
-@import 'fonts'
-
 .vacancies
   background: #635eaa
   padding-top: 60px
@@ -28,6 +24,7 @@
     color: #ffffff
     font-family: "ProbaPro-Bold", sans-serif
     font-size: 40px
+    font-weight: 700
     line-height: 30px
     padding-bottom: 35px
     //padding-top: 35px
@@ -62,6 +59,8 @@
     padding-bottom: 0
     //padding-bottom: 50px
     text-align: center
+    @media screen and (max-width: 430px)
+      padding-bottom: 60px
     @media screen and (min-width: 1200px)
       padding-top: 50px
     &-link
@@ -71,7 +70,8 @@
       font-size: 16px
       line-height: 22px
       margin-top: 10px
-      margin-bottom: 60px
+      //margin-bottom: 60px
+      margin-bottom: 0
       text-decoration: underline
       opacity: 0.5
     &-text

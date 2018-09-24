@@ -1,38 +1,4 @@
 /* NEWS */
-/* FONTS */
-@font-face {
-  font-family: "ProbaPro";
-  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
-  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
-  font-style: normal; }
-
-@font-face {
-  font-family: "LucidGrande-Regular";
-  src: url("../fonts/LucidaGrande/LucidaGrande.ttf") format("ttf");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "ProbaPro-Regular";
-  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
-  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "ProbaPro-Bold";
-  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff") format("woff");
-  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 700; }
-
-@font-face {
-  font-family: "ProbaPro-Medium";
-  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff") format("woff");
-  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 500; }
-
 #news-post {
   padding: 1rem; }
 
@@ -57,6 +23,7 @@
     color: #ffffff;
     font-family: "ProbaPro-Bold", sans-serif;
     font-size: 40px;
+    font-weight: 700;
     line-height: 50px;
     letter-spacing: 0.21px;
     margin-bottom: 30px;
@@ -183,7 +150,7 @@
     .news__count {
       display: block;
       font-size: 24px;
-      font-family: "ProbaPro", sans-serif;
+      font-family: "ProbaPro-Regular", sans-serif;
       font-weight: 500;
       line-height: 40px; }
     .news__text-lighten {

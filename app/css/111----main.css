@@ -8,15 +8,17 @@
   src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
   src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
   src: url("../fonts/ProbaPro/ProbaPro-Regular.ttf") format("truetype");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.svg#ProbaPro-Regular") format("svg");
   font-style: normal; }
 
 @font-face {
   font-family: "LucidGrande-Regular";
   src: url("../fonts/LucidaGrande/LucidaGrande.ttf") format("ttf");
-  src: url("../fonts/LucidaGrande/LucidaGrande.eot");
-  src: url("../fonts/LucidaGrande/LucidaGrande.eot?#iefix") format("embedded-opentype");
-  src: url("../fonts/LucidaGrande/LucidaGrande.woff2") format("woff2");
-  src: url("../fonts/LucidaGrande/LucidaGrande.woff") format("woff");
+  src: url('../fonts/LucidaGrande/LucidaGrande.eot');
+  src: url('../fonts/LucidaGrande/LucidaGrande.woff2') format('woff2');
+  src: url('../fonts/LucidaGrande/LucidaGrande.woff') format('woff');
+  src: url('../fonts/LucidaGrande/LucidaGrande.svg#LucidaGrande') format('svg');
+  src: url('../fonts/LucidaGrande/LucidaGrande.eot?#iefix') format('embedded-opentype');
   font-style: normal;
   font-weight: 400; }
 
@@ -24,10 +26,11 @@
   font-family: "ProbaPro-Regular";
   src: url("../fonts/ProbaPro/ProbaPro-Regular.ttf") format("ttf");
   src: url("../fonts/ProbaPro/ProbaPro-Regular.eot");
-  src: url("../fonts/ProbaPro/ProbaPro-Regular.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.eot?#iefix") format("embedded-opentype"); 
   src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
   src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
   src: url("../fonts/ProbaPro/ProbaPro-Regular.ttf") format("truetype");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.svg#ProbaPro-Regular") format("svg");
   font-style: normal;
   font-weight: 400; }
 
@@ -39,6 +42,7 @@
   src: url("../fonts/ProbaPro/ProbaPro-Bold.woff") format("woff");
   src: url("../fonts/ProbaPro/ProbaPro-Bold.woff2") format("woff2");
   src: url("../fonts/ProbaPro/ProbaPro-Bold.ttf") format("truetype");
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.svg#ProbaPro-Bold") format("svg");
   font-style: normal;
   font-weight: 700; }
 
@@ -46,10 +50,11 @@
   font-family: "ProbaPro-Medium";
   src: url("../fonts/LucidaGrande/LucidaGrande.ttf") format("ttf");
   src: url("../fonts/ProbaPro/ProbaPro-Medium.eot");
-  src: url("../fonts/ProbaPro/ProbaPro-Medium.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.eot?#iefix") format("embedded-opentype"); 
   src: url("../fonts/ProbaPro/ProbaPro-Medium.woff") format("woff");
   src: url("../fonts/ProbaPro/ProbaPro-Medium.woff2") format("woff2");
   src: url("../fonts/ProbaPro/ProbaPro-Medium.ttf") format("truetype");
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.svg#ProbaPro-Medium") format("svg");
   font-style: normal;
   font-weight: 500; }
 
@@ -533,7 +538,7 @@ h5 {
   height: 100%;
   border-radius: 70px;
   opacity: 0.3;
-  background: #222;
+  background: #f3762e;
   -webkit-transition: background 0.1s ease-out;
   -o-transition: background 0.1s ease-out;
   transition: background 0.1s ease-out;
@@ -656,6 +661,40 @@ h5 {
     filter: hue-rotate(360deg); } }
 
 /* HEADER */
+/* FONTS */
+@font-face {
+  font-family: "ProbaPro";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal; }
+
+@font-face {
+  font-family: "LucidGrande-Regular";
+  src: url("../fonts/LucidaGrande/LucidaGrande.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Regular";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Bold";
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "ProbaPro-Medium";
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500; }
+
 .header {
   background-color: #ffffff;
   position: fixed;
@@ -757,7 +796,6 @@ h5 {
       transition: all 0.5s ease-in-out; }
       .header__social-link img:hover {
         -webkit-transform: scale(1.05);
-            -ms-transform: scale(1.05);
                 transform: scale(1.05); }
     .header__social-mobile {
       margin-top: 25px;
@@ -1023,6 +1061,40 @@ h5 {
           height: 10px; } }
 
 /* full page slider */
+/* FONTS */
+@font-face {
+  font-family: "ProbaPro";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal; }
+
+@font-face {
+  font-family: "LucidGrande-Regular";
+  src: url("../fonts/LucidaGrande/LucidaGrande.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Regular";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Bold";
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "ProbaPro-Medium";
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500; }
+
 .gallery {
   font-size: 0;
   padding-top: 50px;
@@ -1093,6 +1165,40 @@ h5 {
 
 /*/ full page slider */
 /* NEWS */
+/* FONTS */
+@font-face {
+  font-family: "ProbaPro";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal; }
+
+@font-face {
+  font-family: "LucidGrande-Regular";
+  src: url("../fonts/LucidaGrande/LucidaGrande.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Regular";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Bold";
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "ProbaPro-Medium";
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500; }
+
 #news-post {
   padding: 1rem; }
 
@@ -1117,7 +1223,6 @@ h5 {
     color: #ffffff;
     font-family: "ProbaPro-Bold", sans-serif;
     font-size: 40px;
-    font-weight: 700;
     line-height: 50px;
     letter-spacing: 0.21px;
     margin-bottom: 30px;
@@ -1244,7 +1349,7 @@ h5 {
     .news__count {
       display: block;
       font-size: 24px;
-      font-family: "ProbaPro-Regular", sans-serif;
+      font-family: "ProbaPro", sans-serif;
       font-weight: 500;
       line-height: 40px; }
     .news__text-lighten {
@@ -1451,6 +1556,40 @@ h5 {
 
 /*/ NEWS-POST */
 /* STUDIO */
+/* FONTS */
+@font-face {
+  font-family: "ProbaPro";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal; }
+
+@font-face {
+  font-family: "LucidGrande-Regular";
+  src: url("../fonts/LucidaGrande/LucidaGrande.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Regular";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Bold";
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "ProbaPro-Medium";
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500; }
+
 .studio {
   background-color: #f3762e;
   padding-bottom: 160px;
@@ -1462,7 +1601,6 @@ h5 {
     color: #ffffff;
     font-family: "ProbaPro-Bold", sans-serif;
     font-size: 40px;
-    font-weight: 700;
     line-height: 50px;
     letter-spacing: 0.21px;
     text-align: center;
@@ -1483,6 +1621,7 @@ h5 {
     color: #383838;
     font-family: "ProbaPro-Bold", sans-serif;
     font-size: 10px;
+    /*line-height: 20px;*/
     text-transform: uppercase;
     letter-spacing: 1.5px;
     display: -webkit-box;
@@ -1549,6 +1688,7 @@ h5 {
       line-height: 48px; }
     .studio__link {
       font-size: 18px;
+      /*line-height: 20px;*/
       letter-spacing: 1.5px;
       margin: 80px auto 0;
       width: 300px;
@@ -1819,6 +1959,40 @@ h5 {
           height: 600px; } }
 
 /* PROJECTS SECTION */
+/* FONTS */
+@font-face {
+  font-family: "ProbaPro";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal; }
+
+@font-face {
+  font-family: "LucidGrande-Regular";
+  src: url("../fonts/LucidaGrande/LucidaGrande.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Regular";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Bold";
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "ProbaPro-Medium";
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500; }
+
 /* projects */
 .projects {
   background-color: #bdd747;
@@ -2022,7 +2196,6 @@ h5 {
     color: #383838;
     font-family: "ProbaPro-Bold", sans-serif;
     font-size: 40px;
-    font-weight: 700;
     line-height: 30px;
     letter-spacing: 0.5px;
     position: static;
@@ -2223,6 +2396,40 @@ h5 {
 
 /*/ projects popup */
 /* VACANCIES */
+/* FONTS */
+@font-face {
+  font-family: "ProbaPro";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal; }
+
+@font-face {
+  font-family: "LucidGrande-Regular";
+  src: url("../fonts/LucidaGrande/LucidaGrande.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Regular";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Bold";
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "ProbaPro-Medium";
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500; }
+
 .vacancies {
   background: #635eaa;
   padding-top: 60px; }
@@ -2250,7 +2457,6 @@ h5 {
     color: #ffffff;
     font-family: "ProbaPro-Bold", sans-serif;
     font-size: 40px;
-    font-weight: 700;
     line-height: 30px;
     padding-bottom: 35px;
     text-align: center; }
@@ -2305,6 +2511,7 @@ h5 {
       font-size: 16px;
       line-height: 22px;
       margin-top: 10px;
+      /*margin-bottom: 60px;*/
       margin-bottom: 0;
       text-decoration: underline;
       opacity: 0.5; }
@@ -2445,6 +2652,40 @@ h5 {
 
 /*/vacancies-post*/
 /* CONTACTS */
+/* FONTS */
+@font-face {
+  font-family: "ProbaPro";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal; }
+
+@font-face {
+  font-family: "LucidGrande-Regular";
+  src: url("../fonts/LucidaGrande/LucidaGrande.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Regular";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Bold";
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "ProbaPro-Medium";
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500; }
+
 .contacts-white-bg {
   width: 100%;
   margin-top: 1rem; }
@@ -2467,7 +2708,6 @@ h5 {
     font-size: 40px;
     line-height: 30px;
     font-family: "ProbaPro-Bold", sans-serif;
-    font-weight: 700;
     text-align: center;
     margin-bottom: 40px;
     position: relative; }
@@ -2615,6 +2855,40 @@ h5 {
 
 /*/ CONTACTS */
 /* TABS */
+/* FONTS */
+@font-face {
+  font-family: "ProbaPro";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal; }
+
+@font-face {
+  font-family: "LucidGrande-Regular";
+  src: url("../fonts/LucidaGrande/LucidaGrande.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Regular";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Bold";
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "ProbaPro-Medium";
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500; }
+
 .tabs-container {
   position: relative;
   padding: 0 1rem; }
@@ -2686,6 +2960,40 @@ ul.tabs {
     display: inherit; }
 
 /* FANCY BOX 3 custom */
+/* FONTS */
+@font-face {
+  font-family: "ProbaPro";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal; }
+
+@font-face {
+  font-family: "LucidGrande-Regular";
+  src: url("../fonts/LucidaGrande/LucidaGrande.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Regular";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Bold";
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "ProbaPro-Medium";
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500; }
+
 .fancybox-content {
   width: 100%; }
 
@@ -2763,7 +3071,7 @@ ul.tabs {
   .fancybox-infobar span {
     color: #fff;
     font-size: 24px;
-    font-family: 'ProbaPro', sans-serif;
+    font-family: "ProbaPro", sans-serif;
     font-weight: 500;
     line-height: 40px;
     text-align: center; }
@@ -2771,10 +3079,51 @@ ul.tabs {
       opacity: 0.25; }
 
 /* MAP custom */
+/* FONTS */
+@font-face {
+  font-family: "ProbaPro";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal; }
+
+@font-face {
+  font-family: "LucidGrande-Regular";
+  src: url("../fonts/LucidaGrande/LucidaGrande.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Regular";
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "ProbaPro-Bold";
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "ProbaPro-Medium";
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff") format("woff");
+  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500; }
+
 .map {
   width: 100%;
   height: 300px;
-  position: relative; }
+  position: relative;
+  /*z-index: 5 !important;*/ }
+  /*.map .ymaps-glass-pane.ymaps-events-pane {
+    z-index: 10 !important; }
+  .map .ymaps-layers-pane {
+    z-index: 3 !important; }
+    .map .ymaps-layers-pane ymaps {
+      z-index: 5 !important; }*/
   .map-section {
     position: relative;
     display: -webkit-box;
@@ -2796,100 +3145,6 @@ ul.tabs {
   @media screen and (min-width: 580px) {
     .map {
       height: 675px; } }
-
-/* NO FOUND, ERROR 404 */
-.no-found {
-  height: 100vh;
-  position: relative;
-  max-width: 100%;
-  padding: 0 1rem; }
-  .no-found-wrapper {
-    background-color: #f3762e;
-    overflow: hidden; }
-  .no-found__content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%); }
-    .no-found__content img {
-      width: 240px;
-      margin: auto;
-      display: block; }
-      @media screen and (min-width: 992px) {
-        .no-found__content img {
-          width: auto; } }
-  .no-found__text {
-    color: #ffffff;
-    font-family: "ProbaPro-Medium", sans-serif;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 25px;
-    text-align: center;
-    margin-top: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 85%; }
-    @media screen and (min-width: 350px) {
-      .no-found__text {
-        font-size: 18px; } }
-    @media screen and (min-width: 992px) {
-      .no-found__text {
-        font-size: 24px;
-        line-height: 38px;
-        margin-top: 30px;
-        max-width: 100%; } }
-  .no-found__link {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    border-radius: 45px;
-    background-color: #ffffff;
-    color: #383838;
-    font-family: "ProbaPro-Bold", sans-serif;
-    font-weight: 700;
-    font-size: 10px;
-    width: 100px;
-    height: 30px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin: 30px auto 0; }
-    @media screen and (min-width: 992px) {
-      .no-found__link {
-        width: 210px;
-        height: 50px;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 20px;
-        margin-top: 60px;
-        letter-spacing: 1.5px; } }
-  .no-found__icon {
-    position: absolute; }
-    .no-found__icon img {
-      width: 115px;
-      height: 115px; }
-      @media screen and (min-width: 992px) {
-        .no-found__icon img {
-          width: auto;
-          height: auto; } }
-    .no-found__icon-top {
-      display: inline-block;
-      top: 0;
-      left: 0; }
-      @media screen and (min-width: 992px) {
-        .no-found__icon-top {
-          left: 1rem; } }
-    .no-found__icon-bottom {
-      display: inline-block;
-      bottom: 0.5rem;
-      right: 1rem; }
 
 * {
   -webkit-box-sizing: border-box;

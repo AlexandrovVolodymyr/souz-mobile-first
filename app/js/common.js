@@ -289,15 +289,21 @@
   /*/  projects slider */
 
   //fancy box loop images
-  $('[data-fancybox]').fancybox({
-    'loop': 'true',
-    'scrolling': 'no',
-    'iframe': {'scrolling': 'no'}
-  });
+  if(  $('[data-fancybox]').length > 0 ) {
+    $('[data-fancybox]').fancybox({
+      'loop': 'true',
+      'scrolling': 'no',
+      'iframe': {'scrolling': 'no'}
+    });
 
-  $().fancybox({
-    selector : '[data-fancybox="gallery2"]',
-    loop     : true
+    $().fancybox({
+      selector : '[data-fancybox="gallery2"]',
+      loop     : true
+    });
+  }
+
+  $('#line4 svg').click(function(e){
+    e.preventDefault();
   });
 
 })();

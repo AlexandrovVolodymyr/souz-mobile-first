@@ -1,0 +1,80 @@
+/* NO FOUND, ERROR 404 */
+
+.no-found
+  height: 100vh
+  position: relative
+  max-width: 100%
+  padding: 0 1rem
+  &-wrapper
+    background-color: #f3762e
+    overflow: hidden
+  &__content
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    img
+      width: 240px
+      margin: auto
+      display: block
+      @media screen and (min-width: 992px)
+        width: auto
+  &__text
+    color: #ffffff
+    font-family: "ProbaPro-Medium", sans-serif
+    font-weight: 500
+    font-size: 17px
+    line-height: 25px
+    text-align: center
+    margin-top: 5px
+    margin-left: auto
+    margin-right: auto
+    max-width: 85%
+    @media screen and (min-width: 350px)
+      font-size: 18px
+    @media screen and (min-width: 992px)
+      font-size: 24px
+      line-height: 38px
+      margin-top: 30px
+      max-width: 100%
+  &__link
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 45px
+    background-color: #ffffff
+    color: #383838
+    font-family: "ProbaPro-Bold", sans-serif
+    font-weight: 700
+    font-size: 10px
+    width: 100px
+    height: 30px
+    text-transform: uppercase
+    letter-spacing: 0.5px
+    margin: 30px auto 0
+    @media screen and (min-width: 992px)
+      width: 210px
+      height: 50px
+      font-size: 18px
+      font-weight: 700
+      line-height: 20px
+      margin-top: 60px
+      letter-spacing: 1.5px
+  &__icon
+    position: absolute
+    img
+      width: 115px
+      height: 115px
+      @media screen and (min-width: 992px)
+        width: auto
+        height: auto
+    &-top
+      display: inline-block
+      top: 0
+      left: 0
+      @media screen and (min-width: 992px)
+        left: 1rem
+    &-bottom
+      display: inline-block
+      bottom: 0.5rem
+      right: 1rem

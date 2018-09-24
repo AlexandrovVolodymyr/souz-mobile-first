@@ -1,38 +1,4 @@
 /* full page slider */
-/* FONTS */
-@font-face {
-  font-family: "ProbaPro";
-  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
-  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
-  font-style: normal; }
-
-@font-face {
-  font-family: "LucidGrande-Regular";
-  src: url("../fonts/LucidaGrande/LucidaGrande.ttf") format("ttf");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "ProbaPro-Regular";
-  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
-  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "ProbaPro-Bold";
-  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff") format("woff");
-  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 700; }
-
-@font-face {
-  font-family: "ProbaPro-Medium";
-  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff") format("woff");
-  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 500; }
-
 .gallery {
   font-size: 0;
   padding-top: 50px;

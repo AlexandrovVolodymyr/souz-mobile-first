@@ -1,38 +1,4 @@
 /* CONTACTS */
-/* FONTS */
-@font-face {
-  font-family: "ProbaPro";
-  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
-  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
-  font-style: normal; }
-
-@font-face {
-  font-family: "LucidGrande-Regular";
-  src: url("../fonts/LucidaGrande/LucidaGrande.ttf") format("ttf");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "ProbaPro-Regular";
-  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
-  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "ProbaPro-Bold";
-  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff") format("woff");
-  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 700; }
-
-@font-face {
-  font-family: "ProbaPro-Medium";
-  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff") format("woff");
-  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 500; }
-
 .contacts-white-bg {
   width: 100%;
   margin-top: 1rem; }
@@ -55,6 +21,7 @@
     font-size: 40px;
     line-height: 30px;
     font-family: "ProbaPro-Bold", sans-serif;
+    font-weight: 700;
     text-align: center;
     margin-bottom: 40px;
     position: relative; }
@@ -157,7 +124,7 @@
       width: 100%; }
     .contacts__footer-title {
       color: #000000;
-      font-family: "ProbaPro-Bold", sans-serif;
+      font-family: "ProbaPro", sans-serif;
       font-size: 18px;
       line-height: 24px;
       text-align: center;

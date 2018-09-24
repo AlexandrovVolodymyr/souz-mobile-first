@@ -1,38 +1,4 @@
 /* PROJECTS SECTION */
-/* FONTS */
-@font-face {
-  font-family: "ProbaPro";
-  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
-  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
-  font-style: normal; }
-
-@font-face {
-  font-family: "LucidGrande-Regular";
-  src: url("../fonts/LucidaGrande/LucidaGrande.ttf") format("ttf");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "ProbaPro-Regular";
-  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff") format("woff");
-  src: url("../fonts/ProbaPro/ProbaPro-Regular.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "ProbaPro-Bold";
-  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff") format("woff");
-  src: url("../fonts/ProbaPro/ProbaPro-Bold.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 700; }
-
-@font-face {
-  font-family: "ProbaPro-Medium";
-  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff") format("woff");
-  src: url("../fonts/ProbaPro/ProbaPro-Medium.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 500; }
-
 /* projects */
 .projects {
   background-color: #bdd747;
@@ -236,6 +202,7 @@
     color: #383838;
     font-family: "ProbaPro-Bold", sans-serif;
     font-size: 40px;
+    font-weight: 700;
     line-height: 30px;
     letter-spacing: 0.5px;
     position: static;
@@ -254,7 +221,7 @@
         line-height: 70px; } }
   .projects__info {
     color: #383838;
-    font-family: "ProbaPro-Regular", sans-serif;
+    font-family: "ProbaPro-Medium", sans-serif;
     font-size: 14px;
     line-height: 20px;
     max-width: 490px;

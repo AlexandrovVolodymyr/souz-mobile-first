@@ -1,12 +1,9 @@
 /* NO FOUND, ERROR 404 */
-@import url(../fonts/ft40/ft40.css);
-@import url(../fonts/AG Book Pro Regular/AG Book Pro Regular.css);
-@import url(../fonts/AG Book Pro Bold/AG Book Pro Bold.css);
 .no-found {
   height: 100vh;
   position: relative;
-  max-width: 1200px;
-  margin: auto; }
+  max-width: 100%;
+  padding: 0 1rem; }
   .no-found-wrapper {
     background-color: #f3762e;
     overflow: hidden; }
@@ -17,47 +14,80 @@
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); }
+    .no-found__content img {
+      width: 240px;
+      margin: auto;
+      display: block; }
+      @media screen and (min-width: 992px) {
+        .no-found__content img {
+          width: auto; } }
   .no-found__text {
     color: #ffffff;
-    font-family: "ProbaPro-Regular", sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 38px;
+    font-family: "ProbaPro-Medium", sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
     text-align: center;
-    margin-top: 30px; }
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 85%; }
+    @media screen and (min-width: 350px) {
+      .no-found__text {
+        font-size: 18px; } }
+    @media screen and (min-width: 992px) {
+      .no-found__text {
+        font-size: 24px;
+        line-height: 38px;
+        margin-top: 30px;
+        max-width: 100%; } }
   .no-found__link {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-pack: center;
-    -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 210px;
-    height: 50px;
-    -webkit-border-radius: 45px;
-            border-radius: 45px;
+    border-radius: 45px;
     background-color: #ffffff;
     color: #383838;
     font-family: "ProbaPro-Bold", sans-serif;
-    font-size: 18px;
     font-weight: 700;
-    line-height: 20px;
+    font-size: 10px;
+    width: 100px;
+    height: 30px;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
-    margin: 55px auto 0; }
+    letter-spacing: 0.5px;
+    margin: 30px auto 0; }
+    @media screen and (min-width: 992px) {
+      .no-found__link {
+        width: 210px;
+        height: 50px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 20px;
+        margin-top: 60px;
+        letter-spacing: 1.5px; } }
   .no-found__icon {
     position: absolute; }
+    .no-found__icon img {
+      width: 115px;
+      height: 115px; }
+      @media screen and (min-width: 992px) {
+        .no-found__icon img {
+          width: auto;
+          height: auto; } }
     .no-found__icon-top {
       display: inline-block;
       top: 0;
       left: 0; }
+      @media screen and (min-width: 992px) {
+        .no-found__icon-top {
+          left: 1rem; } }
     .no-found__icon-bottom {
       display: inline-block;
-      bottom: 0;
-      right: 0; }
+      bottom: 0.5rem;
+      right: 1rem; }
